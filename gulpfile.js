@@ -42,7 +42,11 @@ gulp.task('webp', async function() {
 	gulp.src(['src/img/*.jpg', 'src/img/*.png',])
 	.pipe(webp())
 	.pipe(gulp.dest('src/img'));
+})
 
+gulp.task('favicon', async function() {
+	gulp.src(['src/favicon/*.*',])
+	.pipe(gulp.dest('dist/favicon'));
 })
  
 gulp.task('img', function() {
@@ -76,5 +80,5 @@ gulp.task('serve', function () {
 	gulp.watch('src/js/**/*.js').on("change", reload);
 });
 
-gulp.task('build', gulp.series('prebuild', 'clean',  'sass', 'scripts', 'plugins', 'img'));
+gulp.task('build', gulp.series('prebuild', 'clean',  'sass', 'scripts', 'plugins', 'img', 'favicon'));
 

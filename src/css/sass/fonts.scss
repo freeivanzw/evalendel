@@ -1,32 +1,32 @@
 // FONTS
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Regular.eot');
-    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Montserrat-Regular.woff') format('woff'),
-        url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-family: 'Presicav';
+    src: url('../fonts/PresicavLt-Regular.eot');
+    src: url('../fonts/PresicavLt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PresicavLt-Regular.woff') format('woff'),
+        url('../fonts/PresicavLt-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pangram';
+    src: url('../fonts/Pangram-Regular.eot');
+    src: url('../fonts/Pangram-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Pangram-Regular.woff') format('woff'),
+        url('../fonts/Pangram-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Bold.eot');
-    src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Montserrat-Bold.woff') format('woff'),
-        url('../fonts/Montserrat-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Medium.eot');
-    src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Montserrat-Medium.woff') format('woff'),
-        url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-family: 'Cabin';
+    src: url('../fonts/Cabin-Medium.eot');
+    src: url('../fonts/Cabin-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Cabin-Medium.woff') format('woff'),
+        url('../fonts/Cabin-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
