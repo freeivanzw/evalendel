@@ -9,8 +9,8 @@
 }
 @font-face {
   font-family: "Pangram";
-  src: url("../fonts/design/PPPangramSans-Medium.eot");
-  src: url("../fonts/design/PPPangramSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/design/PPPangramSans-Medium.woff") format("woff"), url("../fonts/design/PPPangramSans-Medium.ttf") format("truetype");
+  src: url("../fonts/PPPangramSans-Medium.eot");
+  src: url("../fonts/PPPangramSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PPPangramSans-Medium.woff") format("woff"), url("../fonts/PPPangramSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -36,7 +36,7 @@
   --btn-hover-bg: #CDCDC3;
   --btn-hover-text: #201E1E;
   --btn-contrast-border: #201E1E;
-  --btn-contrast-bg: #201E1E
+  --btn-contrast-bg: #201E1E;
   --btn-contrast-text: #F5F4EB;
   --btn-contrast-hover-border: #201E1E;
   --btn-contrast-hover-bg: #CDCDC3;
@@ -186,7 +186,6 @@ select {
 BODY, HTML {
   font-family: "Pangram", sans-serif;
   font-style: normal;
-  font-weight: normal;
   font-size: 11px;
   line-height: 1.4;
   width: 100%;
@@ -202,17 +201,185 @@ body {
   background-color: var(--main-color);
 }
 
-a:active {
-  color: inherit;
-  /* НЕ УДАЛЯТИ */
-}
-
 .hidden {
   display: none !important;
 }
 
 h1 {
-  font-family: "Presicav";
+  font-family: "Presicav", sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Presicav", sans-serif;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Presicav", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Presicav", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Presicav", sans-serif;
+  font-size: 10px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--icon-color);
+  transition: 0.3s;
+}
+
+a:not([class]) {
+  font-family: "Pangram", sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--link-color);
+  display: inline-block;
+}
+a.arrow_link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--link-color);
+  display: flex;
+  align-items: center;
+}
+a.arrow_link:hover .icon {
+  transform: translateX(5px);
+}
+a.arrow_link.inactive {
+  opacity: 0.4;
+}
+a.arrow_link.inactive .icon {
+  transform: none;
+}
+a.arrow_link .icon {
+  fill: var(--link-color);
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  transition: 0.3s;
+}
+a:active {
+  color: inherit;
+  /* НЕ УДАЛЯТИ */
+}
+
+article {
+  font-family: "Pangram", sans-serif;
+  font-size: 14px;
+}
+article a:not([class]) {
+  transition: 0.3s;
+  text-decoration: underline;
+}
+article a:not([class]):hover {
+  opacity: 0.4;
+}
+article ul {
+  padding-left: 25px;
+  list-style: disc;
+}
+article > * {
+  margin-bottom: 15px;
+}
+
+.btn {
+  font-family: "Pangram", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--btn-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 30px;
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.btn:hover {
+  color: var(--btn-hover-text);
+  border-color: var(--btn-hover-border);
+  background-color: var(--btn-hover-bg);
+}
+.btn:hover .icon {
+  transform: translateX(5px);
+}
+.btn.active {
+  color: var(--btn-hover-text);
+  border-color: var(--btn-hover-border);
+  background-color: var(--btn-hover-bg);
+}
+.btn.inactive {
+  opacity: 0.4;
+  cursor: unset;
+}
+.btn.inactive:hover {
+  color: var(--btn-text);
+  border-color: var(--btn-border);
+  background-color: var(--btn-bg);
+}
+.btn.inactive:hover .icon {
+  transform: none;
+}
+.btn.dark_btn {
+  color: var(--btn-contrast-text);
+  border-color: var(--btn-contrast-border);
+  background-color: var(--btn-contrast-bg);
+}
+.btn.dark_btn.active {
+  color: var(--btn-contrast-hover-text);
+  border-color: var(--btn-contrast-hover-border);
+  background-color: var(--btn-contrast-hover-bg);
+}
+.btn.dark_btn.active .icon {
+  fill: var(--btn-contrast-hover-text);
+}
+.btn.dark_btn:hover {
+  color: var(--btn-contrast-hover-text);
+  border-color: var(--btn-contrast-hover-border);
+  background-color: var(--btn-contrast-hover-bg);
+}
+.btn.dark_btn:hover .icon {
+  fill: var(--btn-contrast-hover-text);
+}
+.btn.dark_btn.inactive:hover {
+  color: var(--btn-contrast-text);
+  border-color: var(--btn-contrast-border);
+  background-color: var(--btn-contrast-bg);
+}
+.btn.dark_btn.inactive:hover .icon {
+  fill: var(--btn-contrast-text);
+}
+.btn.dark_btn .icon {
+  fill: var(--btn-contrast-text);
+}
+.btn .icon {
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  fill: var(--btn-text);
 }
