@@ -1,22 +1,44 @@
 // FONTS
+// @font-face {
+//     font-family: 'Presicav';
+//     src: url('../fonts/PresicavLt-Regular.eot');
+//     src: url('../fonts/PresicavLt-Regular.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/PresicavLt-Regular.woff') format('woff'),
+//         url('../fonts/PresicavLt-Regular.ttf') format('truetype');
+//     font-weight: 400;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
 @font-face {
     font-family: 'Presicav';
     src: url('../fonts/PresicavLt-Regular.eot');
     src: url('../fonts/PresicavLt-Regular.eot?#iefix') format('embedded-opentype'),
         url('../fonts/PresicavLt-Regular.woff') format('woff'),
         url('../fonts/PresicavLt-Regular.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
+// @font-face {
+//     font-family: 'Pangram';
+//     src: url('../fonts/Pangram-Regular.eot');
+//     src: url('../fonts/Pangram-Regular.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/Pangram-Regular.woff') format('woff'),
+//         url('../fonts/Pangram-Regular.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
 @font-face {
     font-family: 'Pangram';
-    src: url('../fonts/Pangram-Regular.eot');
-    src: url('../fonts/Pangram-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Pangram-Regular.woff') format('woff'),
-        url('../fonts/Pangram-Regular.ttf') format('truetype');
-    font-weight: normal;
+    src: url('../fonts/design/PPPangramSans-Medium.eot');
+    src: url('../fonts/design/PPPangramSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/design/PPPangramSans-Medium.woff') format('woff'),
+        url('../fonts/design/PPPangramSans-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
