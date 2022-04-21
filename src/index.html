@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="./css/adaptive.css">
 </head>
 <body>
+    <header class="site_header">
+        
+    </header>
     
    <article>
         <h1>LESS IS MORE 2022</h1>
@@ -57,7 +60,36 @@
    <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
    <br>
    <a href="#" class="arrow_link inactive">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+   <br>
+    <div class="input_wrap">
+        <input type="text" placeholder="Name">
+    </div>
+    <div class="input_wrap">
+        <input type="text" class="error" placeholder="Email">
+        <span class="error_text">Invalid email, please enter correct data</span>
+    </div>
+    <div class="input_wrap">
+        <input type="text">
+    </div>
+    <div class="dropdown order_delivery">
+        <div class="overflow">
+            <span>Спосіб доставки</span>
+            <button type="button" class="drop_arrow"><svg class="icon"><use xlink:href="./images/sprite.svg#dropdown_arrow"></use></svg> </button>
+        </div>
+        <ul style="display: none;">
+            <li><a href="#">Нова Пошта</a></li>
+            <li><a href="#">Кур’єр Нова Пошта</a></li>
+            <li><a href="#">Кур’єр Міст Експрес</a></li>
+            <li><a href="#">Самовивіз</a></li>
+            <li><a href="#">Інше</a></li>
+        </ul>
+    </div>
 
+    <a href="#" class="zoom_photo">
+        <img src="./images/test_photo.jpg" alt="zoom photo">
+    </a>
+
+   
 
     <div class="test_slider">
         <div><img src="./images/blog-1.webp" alt=""></div>

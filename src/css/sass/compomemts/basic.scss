@@ -11,8 +11,8 @@ BODY, HTML {
 }
 
 body {
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	// flex-direction: column;
 	width: 100%;
 	background-color: var(--main-color);
 }
@@ -147,7 +147,7 @@ article {
 	padding: 24px 30px;
 	background-color: var(--btn-bg);
 	border: 1px solid var(--btn-border);
-	border-radius: 10px;
+	border-radius: var(--border-r-size);
 	transition: 0.3s;
 
 	&:hover {
@@ -230,4 +230,328 @@ article {
 		height: 10px;
 		fill: var(--btn-text);
 	}	
+}
+
+.input_wrap {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+input[type=text] {
+	font-family: 'Pangram';
+	font-size: 11px;
+	line-height: 1.4;
+	display: flex;
+	align-items: center;
+	padding: 0 15px 0 20px;
+	height: 60px;
+	min-height: 60px;
+	background-color: var(--main-color);
+	border: 1px solid var(--border-color);
+	border-radius: var(--border-r-size);
+	transition: 0.3s;
+	position: relative;
+	outline: none;
+
+	&::placeholder {
+		opacity: 0.4;
+	}
+
+	&.error {
+		border-color: var(--error-color);
+	}
+}
+
+.error_text {
+	font-family: 'Cabin';
+	font-size: 11px;
+	line-height: 1.4;
+	color: var(--error-color);
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+/* ДРОПДАУН */
+
+.dropdown {
+    position: relative;
+	margin-bottom: 10px;
+    height: 60px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-r-size);
+	z-index: 1;
+    transition: .3s;
+}
+
+.dropdown.error {
+	border-color: var(--error-color);
+}
+
+.dropdown_short {
+    width: 68px;
+    height: 30px;
+    margin: 0 20px;
+    color: #1d1d1d
+}
+
+.dropdown_short:hover .drop_arrow {
+    background-color: #5ead5a
+}
+
+.dropdown.dropdown_short.dropdown-open {
+    width: 68px
+}
+
+.dropdown .overflow {
+    width: 100%;
+    height: 100%;
+    padding: 0 90px 0 0;
+    background-color: var(--main-color);
+    position: relative;
+	border-radius: var(--border-r-size);
+    float: left;
+}
+
+.dropdown.short .overflow {
+	width: 138px
+}
+
+.dropdown.dropdown-open .overflow {
+	z-index: 10;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.dropdown Span {
+	font-family: 'Pangram';
+	font-size: 11px;
+	line-height: 1.4;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 0 0 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.dropdown_short Span {
+    padding: 0 10px
+}
+
+.dropdown UL {
+    position: absolute;
+    top: 50px;
+    right: -1px;
+    left: -1px;
+    background: var(--main-color);
+    border: 1px solid var(--border-color);
+    border-bottom-right-radius: var(--border-r-size);
+    border-bottom-left-radius: var(--border-r-size);
+    z-index: 4;
+	padding-top: 10px;
+    margin: 0;
+    border-top: none;
+    display: none;
+}
+
+.dropdown_short ul {
+    border-radius: 3px;
+    top: 28px;
+    overflow: auto;
+}
+
+.dropdown UL LI {
+    position: relative;
+    float: left;
+    background: none;
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.dropdown_short UL LI {
+    border: none
+}
+
+.dropdown UL LI A {
+	font-family: 'Pangram';
+    font-size: 11px;
+	line-height: 1.4;
+    text-decoration: none;
+    position: relative;
+	width: 100%;
+    float: left;
+    padding: 12px 20px;
+    transition: .3s
+}
+
+.dropdown_short ul li a {
+    color: #1d1d1d;
+    text-align: center;
+    padding: 6px 0
+}
+
+.dropdown UL LI A:hover {
+    opacity: 0.5;
+}
+
+.dropdown_short ul li a:hover {
+    background-color: #e6e6e6;
+    color: initial
+}
+
+.dropdown UL LI A.selected {
+    display: none
+}
+
+.drop_arrow {
+	position: absolute;
+    right: 10px;
+    top: 50%;
+	transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 70px;
+    height: 40px;
+	border-radius: var(--border-r-size);
+	border: 1px solid var(--border-color);
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.dropdown.dropdown-open .drop_arrow,
+.drop_arrow:hover {
+	background-color: var(--neutral-color);
+}
+
+.drop_arrow .icon {
+	width: 10px;
+	height: 10px;
+	transition: 0.3s;
+}
+
+.dropdown.dropdown-open .drop_arrow .icon {
+	transform: rotate(180deg);
+}
+
+.dropdown_short .drop_arrow {
+    right: -1px;
+    top: -1px;
+    background-color: #70c46a;
+    border-radius: 0 3px 3px 0;
+    width: 31px;
+    height: 30px
+}
+
+.dropdown_short .drop_arrow:after {
+    border-width: 6px 3.5px 0 3.5px;
+    border-color: #ffffff transparent transparent transparent;
+    margin-left: -3.5px
+}
+
+.dropdown_sm {
+    background-color: #fff;
+    height: 45px
+}
+
+.dropdown_sm .drop_arrow {
+    width: 45px;
+    height: 45px
+}
+
+.dropdown_sm .drop_arrow:after {
+    border-width: 8px 6px 0 6px;
+    border-color: #fff transparent transparent transparent;
+    margin: -4px 0 0 -6px
+}
+
+.options_dropdown_list UL LI {
+    position: relative;
+    padding: 0 0 0 10px
+}
+
+.options_dropdown_list UL LI:before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 11px
+}
+
+.options_dropdown_list UL LI A {
+    text-decoration: none;
+    color: #117f8a;
+    -webkit-transition: color .3s;
+    transition: color .3s
+}
+
+.options_dropdown_list UL LI A:hover {
+    color: #000
+}
+
+.options_dropdown_tile UL {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 0 0 0
+}
+
+.options_dropdown_tile UL LI {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    margin: 0 3px 3px 0
+}
+
+.options_dropdown_tile UL LI A {
+    text-decoration: none;
+    background-color: #f3f3f3;
+    color: #000;
+    padding: 5px 10px;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+
+.options_dropdown_tile UL LI A:hover {
+    background-color: #117f8a;
+    color: #fff
+}
+
+.options_dropdown_tile UL LI.disabled {
+    opacity: .5
+}
+
+.options_dropdown_tile UL LI.disabled a {
+    cursor: default
+}
+
+.options_dropdown_tile UL LI.disabled a:hover {
+    background-color: #f3f3f3;
+    color: #000
+}
+
+.zoom_photo {
+	overflow: hidden;
+	display: block;
+}
+
+.zoom_photo img {
+	transition: 0.5s;
+}
+
+.zoom_photo:hover img {
+	transform: scale(130%);
 }
