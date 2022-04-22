@@ -65,6 +65,40 @@ $(function () {
         });
     };
 
+    $('.toggle_btn').on('click', function(e) {
+        e.preventDefault();
+        if ($(this).parent('.toggle_wrap').hasClass('active')) {
+            $(this).parent('.toggle_wrap').removeClass('active')
+        } else {
+            $('.toggle_wrap').removeClass('active');
+            $(this).parent('.toggle_wrap').addClass('active')
+        }
+    })
+
+    $('.open_lang').on('click', function() {
+        $(this).parent('.toggle_lang').toggleClass('active');
+    })
+
+    $('.big_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.mini_slider'
+    });
+    $('.mini_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        asNavFor: '.big_slider',
+    });
+
+
+
+
+
+
+
     $('.order_delivery').dropdown()
     
     $('.test_slider').slick()

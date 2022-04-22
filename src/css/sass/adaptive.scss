@@ -1,21 +1,6 @@
 @media only screen and (min-width : 480px)  {
-    
-}
-
-@media only screen and (min-width : 640px)  {
-    
-}
-
-@media only screen and (min-width : 768px)  {
-    h1 {
-        font-size: 60px;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    h3 {
+    h3,
+    .section_title {
         font-size: 24px;
     }
 
@@ -27,10 +12,145 @@
         font-size: 12px;
     }
 
+    .footer_menu > li > a,
+    .subscribe_title {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width : 640px)  {
+
+
+    
+}
+
+@media only screen and (min-width : 768px)  {
+    h1,
+    .main_title {
+        font-size: 60px;
+    }
+
+    h2,
+    .sub_title {
+        font-size: 40px;
+    }
+
+    .toggle_lang {
+        display: flex;
+        margin-left: auto;
+
+        &.active {
+            ul {
+                display: flex;
+            }       
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            margin-right: 8px;
+            display: none;            
+        }
+
+        li {
+            font-family: 'Pangram';
+            text-transform: uppercase;
+            color: var(--link-color);
+            font-size: 12px;
+            line-height: 1.4;
+            padding: 6px;
+            opacity: 0.5;
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .open_lang {
+        font-family: 'Pangram';
+        text-transform: uppercase;
+        color: var(--link-color);
+        font-size: 12px;
+        line-height: 1.4;
+        padding: 6px;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .wishlist_btn {
+        margin-left: 18px;
+    }
+
+
+    .footer_menu {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 30px;
+    }
 }
 
 @media only screen and (min-width : 1024px) {
+    .site_footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .site_footer {
+        nav {
+            width: 66.875%;
+        }
+    }
+
+
+    .footer_subscribe {
+        margin-top: 0;
+        width: 33.125%;
+        min-height: calc(100vh - 78px);
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid var(--border-color);
+        position: relative;
+        
+        &::after {
+            content: '';
+            width: 1px;
+            height: 78px;
+            background-color: var(--border-color);
+            position: absolute;
+            top: 100%;
+            left: -1px;
+        }
+    }
+
+    .copyright {
+        width: 100%;
+        padding: 0;
+    }
     
+    .copyright_evalendel {
+        display: flex;
+        align-items: center;
+        width: 66.875%;
+        height: 100%;
+        padding: 0 30px;
+    }
+    
+    .copyright_sufix {
+        display: flex;
+        align-items: center;
+        width: 33.125%;
+        height: 100%;
+        padding: 0 30px;
+
+        a {
+            margin: 0 3px;
+        }
+    }
 }
 
 @media only screen and (min-width : 1280px) {
