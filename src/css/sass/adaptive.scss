@@ -38,6 +38,7 @@
     .toggle_lang {
         display: flex;
         margin-left: auto;
+        overflow: hidden;
 
         &.active {
             ul {
@@ -68,6 +69,29 @@
         }
     }
 
+    .header_search {
+        font-family: "Pangram";
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--link-color);
+        font-size: 12px;
+        line-height: 1.4;
+        display: block;
+        margin-left: 18px;
+        padding: 6px;
+        transition: 0.3s;
+        overflow: hidden;
+        
+        &:hover {
+            opacity: 0.5;
+        }
+
+        span {
+            display: block;
+            animation: show_menu-text 0.5s ease-in;
+        }
+    }
+
     .open_lang {
         font-family: 'Pangram';
         text-transform: uppercase;
@@ -76,9 +100,15 @@
         line-height: 1.4;
         padding: 6px;
         transition: 0.3s;
-
+        overflow: hidden;
+        
         &:hover {
             opacity: 0.5;
+        }
+        
+        span {
+            display: block;
+            animation: show_menu-text 0.5s ease-in;
         }
     }
 
@@ -154,5 +184,11 @@
 }
 
 @media only screen and (min-width : 1280px) {
-    
+    .mini_slider {
+        min-height: 60vh;
+        
+        .slide {
+            min-height: 60vh;
+        }
+    }    
 }

@@ -5,6 +5,7 @@
     height: 58px;
     border: 1px solid var(--border-color);
     position: relative;
+    transition: 0.3s;
 }
 
 .open_menu {
@@ -16,7 +17,9 @@
     color: var(--link-color);
     padding: 6px 5px 6px 42px;
     position: relative;
+    overflow: hidden;
     transition: 0.3s;
+    overflow: hidden;
 
     &:hover {
         opacity: 0.5;
@@ -30,6 +33,7 @@
         background-color: var(--link-color);
         position: absolute;
         left: 0;
+        animation: show_menu-btn 0.5s ease-in;
     }
 
     &::before {
@@ -38,6 +42,12 @@
 
     &::after {
         bottom: calc(50% + 2px);
+    }
+
+    span {
+        display: block;
+        position: relative;
+        animation: show_menu-text 0.5s ease-in;
     }
 }
 
@@ -48,10 +58,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 
     img {
         display: block;
         width: 100%;
+        animation: show_menu-logo 0.5s ease-in;
     }
 }
 
@@ -69,13 +81,49 @@
     margin-left: auto;
     padding: 6px;
     transition: 0.3s;
+    overflow: hidden;
 
     &:hover {
         opacity: 0.5;
+    }
+
+    span {
+        display: block;
+        animation: show_menu-text 0.5s ease-in;
     }
 
 }
 
 .header_search {
     display: none;
+}
+
+@keyframes show_menu-btn {
+    0% {
+        transform: translateX(-100%);
+    }
+    
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes show_menu-text {
+    0% {
+        transform: translateY(-100%);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes show_menu-logo {
+    0% {
+        transform: translateY(-100%);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
 }

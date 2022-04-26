@@ -19,17 +19,17 @@
 </head>
 <body>
     <header class="site_header">
-        <a href="#" class="open_menu">Menu</a>
-        <a href="#" class="header_search">Search</a>
+        <a href="#" class="open_menu"><span>Menu</span></a>
+        <a href="#" class="header_search"><span>Search</span></a>
         <a href="#" class="header_logo"><img src="./images/logo.svg" alt="logo"></a>
         <div class="toggle_lang">
             <ul>
                 <li><a href="#">UA</a></li>
                 <li><a href="#">RU</a></li>
             </ul>
-            <button class="open_lang">EN</button>
+            <button class="open_lang"><span>EN</span></button>
         </div>
-        <a href="#" class="wishlist_btn">Wishlist</a>
+        <a href="#" class="wishlist_btn"><span>Wishlist</span></a>
     </header>
     <main>
         <section class="main_banner">
@@ -50,11 +50,12 @@
                     <img src="./images/banner-mob.png" width="375px" height="621" alt="banner main">
                 </picture>
             </div>
-             <div class="mini_slider" data-prev="01" data-next="04"> <!-- сюди передавати позицію слайдів -->
+            <!-- для меншого слайдеру потрібно для стрілки назад передавати попередній номер попереднього слайдеру а для кнопки вперід - номер наступного. в атрибут value наприклад: <button class="slick-next slick-arrow" value="01"> -->
+            <div class="mini_slider" data-prev="01" data-next="04"> 
                 <div class="slide">
-                    <span class="section_title">Less is more 2022</span>
+                    <span class="section_title">Less is more 2022 ess is more 2022</span>
                     <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                    <span class="slide_text">She got inspired by classics, but wanted to add a hint of her own modern vision.</span>
+                    <span class="slide_text">She got inspired by classics, but wanted to add a hint of her own modern vision.She got inspired by classics, but wanted to add a hint of her own modern vision.</span>
                 </div>
                 <div class="slide">
                     <span class="section_title">Less is more 2022</span>
@@ -68,6 +69,7 @@
                 </div>
             </div>
         </section>
+        <div class="current"></div>
         <article>
             <h1>LESS IS MORE 2022</h1>
             <h2>hello world1</h1>
@@ -172,12 +174,8 @@
             <img src="./images/test_photo.jpg" alt="zoom photo">
         </a>
 
-        <div class="test_slider">
-            <div><img src="./images/blog-1.webp" alt=""></div>
-            <div><img src="./images/blog-1.webp" alt=""></div>
-            <div><img src="./images/blog-1.webp" alt=""></div>
-            <div><img src="./images/blog-1.webp" alt=""></div>
-        </div>    
+        <div class="element"></div>
+ 
     </main>
     <footer class="site_footer">
         <nav>
@@ -243,6 +241,8 @@
     
     <script src="./js/jquery.min.js"></script>
     <script src="./js/plugins/slick.min.js"></script>
+    <script src="./js/plugins/gsap.min.js"></script>
+    <script src="./js/plugins/ScrollTrigger.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>

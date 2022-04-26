@@ -86,21 +86,37 @@ $(function () {
         fade: true,
         asNavFor: '.mini_slider'
     });
+
     $('.mini_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         asNavFor: '.big_slider',
-    });
+    })
 
-
-
-
-
-
+    $('.big_slider img').addClass('slider_anim');
 
     $('.order_delivery').dropdown()
-    
-    $('.test_slider').slick()
+
+    // АНІМАЦІЯ
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    $('.element').each(function(index, element) {
+        gsap.to(element, {
+            // x: 200,
+            // duration: 1,
+            scrollTrigger: {
+                toggleActions: "restart none none none",
+                trigger: element,
+                start: 'top 100%',
+                end: 'bottom 80%',
+                scrub: true,
+                toggleClass: 'show',
+                onEnter: () => $(element).addClass('tester'),
+                markers: true,
+            },
+        })
+    });
 
 })

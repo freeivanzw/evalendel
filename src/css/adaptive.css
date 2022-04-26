@@ -31,6 +31,7 @@
   .toggle_lang {
     display: flex;
     margin-left: auto;
+    overflow: hidden;
   }
   .toggle_lang.active ul {
     display: flex;
@@ -55,6 +56,27 @@
     opacity: 1;
   }
 
+  .header_search {
+    font-family: "Pangram";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 12px;
+    line-height: 1.4;
+    display: block;
+    margin-left: 18px;
+    padding: 6px;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  .header_search:hover {
+    opacity: 0.5;
+  }
+  .header_search span {
+    display: block;
+    animation: show_menu-text 0.5s ease-in;
+  }
+
   .open_lang {
     font-family: "Pangram";
     text-transform: uppercase;
@@ -63,9 +85,14 @@
     line-height: 1.4;
     padding: 6px;
     transition: 0.3s;
+    overflow: hidden;
   }
   .open_lang:hover {
     opacity: 0.5;
+  }
+  .open_lang span {
+    display: block;
+    animation: show_menu-text 0.5s ease-in;
   }
 
   .wishlist_btn {
@@ -129,5 +156,13 @@
   }
   .copyright_sufix a {
     margin: 0 3px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .mini_slider {
+    min-height: 60vh;
+  }
+  .mini_slider .slide {
+    min-height: 60vh;
   }
 }
