@@ -1018,7 +1018,7 @@ input[type=text].error {
 
 .main_banner {
   width: 100%;
-  min-height: calc(100vh - 58px);
+  min-height: calc(var(--vh, 1vh) * 100 - 58px);
   position: relative;
   border: 1px solid var(--border-color);
   border-top: none;
@@ -1217,4 +1217,13 @@ input[type=text].error {
   100% {
     transform: scale(1);
   }
+}
+.banner_two {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+.banner_photo img {
+  width: 100%;
 }

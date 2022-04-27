@@ -114,7 +114,7 @@ $(function () {
                 scrub: true,
                 toggleClass: 'show',
                 onEnter: () => $(element).addClass('tester'),
-                markers: true,
+                markers: false,
             },
         })
     });

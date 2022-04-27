@@ -16,6 +16,11 @@
 
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/adaptive.css">
+
+    <script>
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    </script>
 </head>
 <body>
     <header class="site_header">
@@ -67,6 +72,16 @@
                     <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
                     <span class="slide_text">She got inspired by classics, but wanted to add a hint of her own modern vision.</span>
                 </div>
+            </div>
+        </section>
+        <section class="banner_two">
+            <div class="banner_text">
+                <span class="sub_title">Inspiring your individuality</span>
+                <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                <span class="slide_text">She got inspired by classics, but wanted to add a hint of her own modern vision.</span>
+            </div>
+            <div class="banner_photo">
+                <img src="./images/banner-two.png" alt="banner two">
             </div>
         </section>
         <div class="current"></div>

@@ -1,6 +1,8 @@
 .main_banner {
     width: 100%;
-    min-height: calc(100vh - 58px);
+    // min-height: calc(100vh - 58px);
+    // min-height:  calc(var(--vh, 1vh) * 100);
+    min-height:  calc(var(--vh, 1vh) * 100 - 58px);
     position: relative;
     border: 1px solid var(--border-color);
     border-top: none;
