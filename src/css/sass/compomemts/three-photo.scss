@@ -1,0 +1,44 @@
+.three_photo {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+
+    .main_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        a {
+            font: inherit;
+        }
+    }
+}
+
+.first_img,
+.second_img,
+.third_img {
+    display: block;
+    width: 130px;
+    height: 176px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.first_img {
+    margin: 0 auto 50px auto;
+}
+
+.second_img {
+    margin: 60px auto 0 0;
+}
+
+.third_img {
+    margin: -200px 0 24px auto;
+}

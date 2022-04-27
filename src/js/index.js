@@ -102,21 +102,51 @@ $(function () {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    $('.element').each(function(index, element) {
+    $('.photo_anim').each(function(index, element) {
         gsap.to(element, {
-            // x: 200,
-            // duration: 1,
+            scale: 1,
             scrollTrigger: {
-                toggleActions: "restart none none none",
                 trigger: element,
                 start: 'top 100%',
-                end: 'bottom 80%',
+                end: 'center 50%',
                 scrub: true,
-                toggleClass: 'show',
-                onEnter: () => $(element).addClass('tester'),
-                markers: false,
             },
         })
+    });
+
+    $('.show_top').each(function(index, element) {
+        gsap.to(element, {
+            scrollTrigger: {
+                trigger: element,
+                start: 'top 50%',
+                onEnter: () => $(element).addClass('anim_finish'),
+            },
+        })
+    });
+
+    // $('.element').each(function(index, element) {
+    //     gsap.to(element, {
+    //         // x: 200,
+    //         // duration: 1,
+    //         scrollTrigger: {
+    //             toggleActions: "restart none none none",
+    //             trigger: element,
+    //             start: 'top 100%',
+    //             end: 'bottom 80%',
+    //             scrub: true,
+    //             toggleClass: 'show',
+    //             onEnter: () => $(element).addClass('tester'),
+    //             markers: false,
+    //         },
+    //     })
+    // });
+
+    $('.link_item').hover(function () {
+        let $this = $(this);
+        $(this).addClass('anim_item')
+        setTimeout(function() {
+            $this.removeClass('anim_item')
+        },1000)
     });
 
 })

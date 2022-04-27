@@ -17,6 +17,12 @@
     font-size: 18px;
   }
 }
+@media only screen and (min-width: 640px) {
+  .banner_text .slide_text {
+    margin-left: auto;
+    width: 220px;
+  }
+}
 @media only screen and (min-width: 768px) {
   h1,
 .main_title {
@@ -103,6 +109,21 @@
     grid-template-columns: repeat(4, 1fr);
     padding: 0 30px;
   }
+
+  .first_img,
+.second_img,
+.third_img {
+    width: 215px;
+    height: 290px;
+  }
+
+  .second_img {
+    margin-top: 44px;
+  }
+
+  .third_img {
+    margin-top: -150px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .site_footer {
@@ -157,6 +178,31 @@
   .copyright_sufix a {
     margin: 0 3px;
   }
+
+  .banner_two {
+    flex-direction: row-reverse;
+    height: calc(var(--vh, 1vh) * 50);
+    min-height: 420px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .banner_text {
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid var(--border-color);
+  }
+  .banner_text .sub_title {
+    max-height: 200px;
+  }
+  .banner_text .slide_text {
+    max-height: 195px;
+    align-items: flex-start;
+  }
+
+  .banner_photo {
+    height: 100%;
+    width: 50%;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .mini_slider {
@@ -164,5 +210,63 @@
   }
   .mini_slider .slide {
     min-height: 60vh;
+  }
+
+  .three_photo {
+    position: relative;
+    padding-top: 148px;
+    padding-bottom: 105px;
+    margin-bottom: 210px;
+  }
+  .three_photo .main_title {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: calc(100% - 460px);
+  }
+  .three_photo .main_title > * + * {
+    margin-top: 30px;
+  }
+
+  .second_img {
+    position: absolute;
+    left: 30px;
+    bottom: 100px;
+    margin: 0;
+  }
+
+  .third_img {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    margin: 0;
+  }
+
+  .link_item {
+    overflow: hidden;
+  }
+  .link_item.anim_item a span {
+    display: block;
+    animation: thee_photo-link 1s ease-in-out;
+  }
+  .link_item a span {
+    display: block;
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes thee_photo-link {
+    0% {
+      transform: translateY(0);
+    }
+    49% {
+      transform: translateY(-120%);
+    }
+    50% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 }
