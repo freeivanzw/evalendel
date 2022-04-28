@@ -6,6 +6,37 @@
     border: 1px solid var(--border-color);
     position: relative;
     transition: 0.3s;
+
+    &.site_header-anim {
+
+        .open_menu {
+
+            &::before,
+            &::after {
+                animation: show_menu-btn 0.5s ease-in;
+            }
+
+            span {
+                animation: show_menu-text 0.5s ease-in;
+            }
+        }
+
+        .header_search span {
+            animation: show_menu-text 0.5s ease-in;
+        }
+
+        .header_logo img {
+            animation: show_menu-logo 0.5s ease-in;
+        }
+
+        .open_lang span {
+            animation: show_menu-text 0.5s ease-in;
+        }
+
+        .wishlist_btn span {
+            animation: show_menu-text 0.5s ease-in;
+        }
+    }
 }
 
 .open_menu {
@@ -33,7 +64,6 @@
         background-color: var(--link-color);
         position: absolute;
         left: 0;
-        animation: show_menu-btn 0.5s ease-in;
     }
 
     &::before {
@@ -47,7 +77,7 @@
     span {
         display: block;
         position: relative;
-        animation: show_menu-text 0.5s ease-in;
+        
     }
 }
 
@@ -63,7 +93,6 @@
     img {
         display: block;
         width: 100%;
-        animation: show_menu-logo 0.5s ease-in;
     }
 }
 
@@ -89,7 +118,6 @@
 
     span {
         display: block;
-        animation: show_menu-text 0.5s ease-in;
     }
 
 }

@@ -86,13 +86,26 @@ $(function () {
         fade: true,
         asNavFor: '.mini_slider'
     });
-
     $('.mini_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         asNavFor: '.big_slider',
     })
+
+    $('.text_blog-wrap').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        asNavFor: '.photo_blog-wrap',
+    })
+    $('.photo_blog-wrap').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.text_blog-wrap'
+    });
 
     $('.big_slider img').addClass('slider_anim');
 
@@ -120,6 +133,27 @@ $(function () {
                 trigger: element,
                 start: 'top 50%',
                 onEnter: () => $(element).addClass('anim_finish'),
+            },
+        })
+    });
+
+    $('.text_blog-wrap').each(function(index, element) {
+        gsap.to(element, {
+            scrollTrigger: {
+                trigger: element,
+                start: 'top 50%',
+                onEnter: () => $(element).addClass('text_blog-anim'),
+            },
+        })
+    });
+
+    $('.three_photo').each(function(index, element) {
+        gsap.to(element, {
+            y: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: element,
+                onEnter: () => $(element).addClass('three_photo-anim'),
             },
         })
     });

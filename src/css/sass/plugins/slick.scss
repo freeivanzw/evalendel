@@ -81,10 +81,6 @@
         pointer-events: none;
     }
 
-    .slick-initialized & {
-        display: block;
-    }
-
     .slick-loading & {
         visibility: hidden;
     }

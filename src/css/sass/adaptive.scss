@@ -95,7 +95,6 @@
 
         span {
             display: block;
-            animation: show_menu-text 0.5s ease-in;
         }
     }
 
@@ -115,7 +114,6 @@
         
         span {
             display: block;
-            animation: show_menu-text 0.5s ease-in;
         }
     }
 
@@ -142,6 +140,34 @@
 
     .third_img {
         margin-top: -150px;
+    }
+
+    .text_blog {
+        padding: 30px;
+
+        .section_title {
+            width: calc(100% - 350px);
+            margin-left: auto;
+            text-align: end;
+        }
+
+        time {
+            left: 30px;
+            bottom: 30px;
+            max-width: 150px;
+        }
+    }
+
+    .tile_bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        height: 138px;
+
+        .section_title {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -230,6 +256,62 @@
         height: 100%;
         width: 50%;
     }
+
+    .blog_slider {
+        display: flex;
+    }
+
+    .text_blog-wrap {
+        width: 50%;
+        border-bottom: none;
+        border-right: 1px solid var(--border-color);
+
+        &.slick-initialized {
+            &::before {
+                bottom: 0;
+                left: calc(100% + 1px);
+            }
+        }
+
+        .slick-arrow {
+            &.slick-prev {
+                top: 100px;
+                left: 100%;
+            }
+
+            &.slick-next {
+                bottom: 0;
+                left: 100%;
+            }
+        }
+    }
+
+    .photo_blog-wrap {
+        width: 50%;
+    }
+
+    .tile_bottom {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        position: relative;
+
+        .section_title {
+            text-align: end;
+        }
+
+        .arrow_link {
+            order: 0;
+            padding: 20px;
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+        }
+
+        .sub_title {
+            display: block;
+        }
+    }    
 }
 
 @media only screen and (min-width : 1280px) {
@@ -247,10 +329,15 @@
         padding-bottom: 105px;
         margin-bottom: 210px;
 
+        &::after {
+            bottom: -210px;
+        }
+
         .main_title {
             margin: 0 auto;
             padding: 0 15px;
-            width: calc(100% - 460px);
+            max-width: calc(100% - 460px);
+            width: calc(100% - 20px);
 
             & > * + * {
                 margin-top: 30px;

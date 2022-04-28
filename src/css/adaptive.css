@@ -80,7 +80,6 @@
   }
   .header_search span {
     display: block;
-    animation: show_menu-text 0.5s ease-in;
   }
 
   .open_lang {
@@ -98,7 +97,6 @@
   }
   .open_lang span {
     display: block;
-    animation: show_menu-text 0.5s ease-in;
   }
 
   .wishlist_btn {
@@ -123,6 +121,31 @@
 
   .third_img {
     margin-top: -150px;
+  }
+
+  .text_blog {
+    padding: 30px;
+  }
+  .text_blog .section_title {
+    width: calc(100% - 350px);
+    margin-left: auto;
+    text-align: end;
+  }
+  .text_blog time {
+    left: 30px;
+    bottom: 30px;
+    max-width: 150px;
+  }
+
+  .tile_bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 138px;
+  }
+  .tile_bottom .section_title {
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -203,6 +226,48 @@
     height: 100%;
     width: 50%;
   }
+
+  .blog_slider {
+    display: flex;
+  }
+
+  .text_blog-wrap {
+    width: 50%;
+    border-bottom: none;
+    border-right: 1px solid var(--border-color);
+  }
+  .text_blog-wrap.slick-initialized::before {
+    bottom: 0;
+    left: calc(100% + 1px);
+  }
+  .text_blog-wrap .slick-arrow.slick-prev {
+    top: 100px;
+    left: 100%;
+  }
+  .text_blog-wrap .slick-arrow.slick-next {
+    bottom: 0;
+    left: 100%;
+  }
+
+  .photo_blog-wrap {
+    width: 50%;
+  }
+
+  .tile_bottom {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    position: relative;
+  }
+  .tile_bottom .section_title {
+    text-align: end;
+  }
+  .tile_bottom .arrow_link {
+    order: 0;
+    padding: 20px;
+  }
+  .tile_bottom .sub_title {
+    display: block;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .mini_slider {
@@ -218,10 +283,14 @@
     padding-bottom: 105px;
     margin-bottom: 210px;
   }
+  .three_photo::after {
+    bottom: -210px;
+  }
   .three_photo .main_title {
     margin: 0 auto;
     padding: 0 15px;
-    width: calc(100% - 460px);
+    max-width: calc(100% - 460px);
+    width: calc(100% - 20px);
   }
   .three_photo .main_title > * + * {
     margin-top: 30px;
