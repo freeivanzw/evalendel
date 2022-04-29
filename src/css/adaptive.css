@@ -4,7 +4,8 @@
     font-size: 24px;
   }
 
-  h4 {
+  h4,
+.item_title {
     font-size: 18px;
   }
 
@@ -21,6 +22,15 @@
   .banner_text .slide_text {
     margin-left: auto;
     width: 220px;
+  }
+
+  .items_grid-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item_grid-one:nth-child(2n+1) {
+    border-right: 1px solid var(--border-color);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -147,6 +157,14 @@
   .tile_bottom .section_title {
     margin-bottom: 0;
   }
+
+  .tiles_text {
+    width: 212px;
+  }
+
+  .stories-title {
+    height: 138px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .site_footer {
@@ -267,6 +285,52 @@
   }
   .tile_bottom .sub_title {
     display: block;
+  }
+
+  .tiles_grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .tiles_element:nth-child(even) {
+    background-color: var(--neutral-color);
+    color: var(--text-color);
+  }
+  .tiles_element:nth-child(even) .main_title {
+    color: var(--text-color);
+  }
+  .tiles_element:nth-child(even) a.arrow_link {
+    color: var(--text-color);
+  }
+  .tiles_element:nth-child(even) a.arrow_link .icon {
+    fill: var(--text-color);
+  }
+  .tiles_element:nth-child(4n+2), .tiles_element:nth-child(4n+3) {
+    background-color: var(--sub_main-color);
+    color: var(--text-color-contrast);
+  }
+  .tiles_element:nth-child(4n+2) .main_title, .tiles_element:nth-child(4n+3) .main_title {
+    color: var(--text-color-contrast);
+  }
+  .tiles_element:nth-child(4n+2) a.arrow_link, .tiles_element:nth-child(4n+3) a.arrow_link {
+    color: var(--text-color-contrast);
+  }
+  .tiles_element:nth-child(4n+2) a.arrow_link .icon, .tiles_element:nth-child(4n+3) a.arrow_link .icon {
+    fill: var(--text-color-contrast);
+  }
+
+  .items_grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item_grid-one:nth-child(2n+1) {
+    border-right: none;
+  }
+
+  .item_grid-one:nth-child(3n+1),
+.item_grid-one:nth-child(3n+2) {
+    border-right: 1px solid var(--border-color);
   }
 }
 @media only screen and (min-width: 1280px) {

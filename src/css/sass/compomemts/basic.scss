@@ -62,7 +62,8 @@ h3,
 }
 
 
-h4 {
+h4,
+.item_title {
 	text-decoration: none;
 	color: var(--text-color);
 	font-family: 'Presicav', sans-serif;
@@ -85,7 +86,8 @@ h5 {
 a {
 	&.main_title,
 	&.sub_title,
-	&.section_title {
+	&.section_title,
+	&.item_title {
 		transition: 0.3s;
 
 		&:hover {

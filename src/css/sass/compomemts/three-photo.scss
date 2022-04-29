@@ -3,7 +3,8 @@
     flex-direction: column;
     padding: 40px 20px;
     position: relative;
-     transform: translateY(400px);
+    transform: translateY(400px);
+    transition: 1s;
     
     &::after {
         content: "";

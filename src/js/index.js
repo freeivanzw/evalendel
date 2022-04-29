@@ -149,8 +149,6 @@ $(function () {
 
     $('.three_photo').each(function(index, element) {
         gsap.to(element, {
-            y: 0,
-            duration: 1,
             scrollTrigger: {
                 trigger: element,
                 onEnter: () => $(element).addClass('three_photo-anim'),
