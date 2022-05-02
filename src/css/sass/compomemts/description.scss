@@ -1,0 +1,50 @@
+.description {
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 20px;
+        border-bottom: 1px solid var(--border-color);
+
+        .sub_title {
+            text-align: center;
+        }
+    }
+}
+
+.desc_images {
+    display: block;
+    border: 1px solid var(--border-color);
+    margin-bottom: 50px;
+
+    img {
+        width: 100%;
+        min-height: 200px;
+        object-fit: cover;
+        height: auto;
+    }
+}
+
+.description_list {
+
+    li {
+        font-family: 'Presicav';
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        padding: 24px 20px 30px 20px;
+        border-bottom: 1px solid var(--border-color);
+
+        b {
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+    }
+}

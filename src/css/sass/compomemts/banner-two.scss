@@ -39,6 +39,10 @@
     &.dark {
         background-color: var(--sub_main-color);
         color: var(--text-color-contrast);
+        
+        .sub_title {
+            color: var(--text-color-contrast);
+        }
 
         .arrow_link {
             color: var(--text-color-contrast);
