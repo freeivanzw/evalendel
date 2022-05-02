@@ -107,6 +107,32 @@ $(function () {
         asNavFor: '.text_blog-wrap'
     });
 
+    $('.goods_slider').each(function(index, element) {
+        $( $(element).find('.goods_inner')).slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            nextArrow: $(element).find('.arrow_right'),
+            prevArrow: $(element).find('.arrow_left'),
+            mobileFirst: true,
+            responsive: [
+                {
+                  breakpoint: 767,
+                  settings: {
+                    slidesToShow: 2,
+                  }
+                },
+                {
+                  breakpoint: 1279,
+                  settings: {
+                    slidesToShow: 3,
+                  }
+                }
+              ]
+        })
+        console.log($(element).find('.arrow_right'))
+    })
+
     $('.big_slider img').addClass('slider_anim');
 
     $('.order_delivery').dropdown()

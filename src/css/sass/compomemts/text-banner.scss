@@ -1,0 +1,21 @@
+.text_banner {
+    border: 1px solid var(--border-color);
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 20px 30px 20px;
+    height: 75vh;
+
+    .main_title {
+        width: 100%;
+        max-width: 915px;
+        margin-bottom: 50px;
+    }
+}
+
+.banner_inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
