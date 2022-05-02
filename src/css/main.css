@@ -930,6 +930,7 @@ input[type=text].error {
 .header_logo img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .toggle_lang {
