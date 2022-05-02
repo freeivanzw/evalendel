@@ -11,10 +11,14 @@ BODY, HTML {
 }
 
 body {
-	// display: flex;
-	// flex-direction: column;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	background-color: var(--site_bg-color);
+}
+
+main {
+	flex: 1 0 auto;
 }
 
 .hidden {

@@ -1,6 +1,7 @@
 .site_header {
     display: flex;
     align-items: center;
+    flex: 0 0 auto;
     padding: 0 15px 0 20px;
     height: 48px;
     border: 1px solid var(--border-color);
