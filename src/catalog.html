@@ -37,121 +37,147 @@
         <a href="#" class="wishlist_btn"><span>Wishlist</span></a>
     </header>
     <main>
-        <!-- БАННЕР -->
-        <section class="main_banner">
-            <div class="big_slider">
-                <picture>
-                    <source media="(max-width: 799px)" srcset="./images/banner-mob.webp">
-                    <source media="(min-width: 800px)" srcset="./images/banner-desk.webp">
-                    <img src="./images/banner-mob.webp" width="375px" height="621" alt="banner main">
-                </picture>
-                <picture>
-                    <source media="(max-width: 799px)" srcset="./images/banner-mob.webp">
-                    <source media="(min-width: 800px)" srcset="./images/banner-desk.webp">
-                    <img src="./images/banner-mob.webp" width="375px" height="621" alt="banner main">
-                </picture>
-                <picture>
-                    <source media="(max-width: 799px)" srcset="./images/banner-mob.webp">
-                    <source media="(min-width: 800px)" srcset="./images/banner-desk.webp">
-                    <img src="./images/banner-mob.webp" width="375px" height="621" alt="banner main">
-                </picture>
-            </div>
-            <div class="mini_slider-wrap mini_slider-anim">
-                <div class="mini_slider" data-prev="01" data-next="04"> 
-                    <div class="slide">
-                        <span class="section_title">Less is more 2022 ess is more 2022</span>
-                        <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                        <span class="slide_text">She got inspired by classics, but wanted to add a hint of her own modern vision.She got inspired by classics, but wanted to add a hint of her own modern vision.</span>
-                    </div>
-                    <div class="slide">
-                        <span class="section_title">Less is more 2022</span>
-                        <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                        <span class="slide_text">She got inspired by classics, but wanted to add a hint of her own modern vision.</span>
-                    </div>
-                    <div class="slide">
-                        <span class="section_title">Less is more 2022</span>
-                        <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                        <span class="slide_text">She got inspired by classics, but wanted to add a hint of her own modern vision.</span>
-                    </div>
-                </div>
-                <div class="mini_slider-arrows">
-                    <a href="#" class="arrow_left">
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                        <span>01</span>
-                    </a>
-                    <a href="#" class="arrow_right">
-                        <span>03</span>
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- БАННЕР ДВА -->
-        <section class="banner_two">
-            <div class="banner_text dark">
-                <span class="sub_title">Inspiring your individuality Inspiring your individuality </span>
-                <a href="#" class="arrow_link show_top">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                <span class="slide_text">Charm, mystery, sensuality, romance, all these epithets characterize the brand Eva Lendel, its dresses are the a perfect mix of contemporary details that awaken the desire to create a gentle and at the same time a bright image.</span>
-            </div>
-            <div class="banner_photo">
-                <img src="./images/banner-two.webp" class="photo_anim" alt="banner two">
-            </div>
-        </section>
-        <!-- ІНФО -->
-        <section class="three_photo">
-            <div class="first_img">
-                <img src="./images/three_photo-1.webp" class="photo_anim" alt="three photo">
-            </div>
-            <ul class="three_list">
-                <div class="main_title">Weddings</div>
-                <div class="link_item main_title"><a href="#"><span>Trunk Shows</span></a></div>
-                <div class="link_item main_title"><a href="#"><span>Trunk Shows</span></a></div>
-                <div class="link_item main_title"><a href="#"><span>Trunk Shows</span></a></div>
-                <div class="main_title">Veils</div>
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#" class="current">Collection</a></li>
             </ul>
-            <div class="second_img">
-                <img src="./images/three_photo-2.webp" class="photo_anim" alt="three photo">
-            </div>
-            <div class="third_img">
-                <img src="./images/three_photo-3.webp" class="photo_anim" alt="three photo">
+        </nav>
+        <!-- БАННEР З ТЕКСТОМ -->
+        <section class="text_banner">
+            <span class="main_title">Weddings Collections</span>
+            <div class="banner_inner">
+                <span class="banner_inner-text">Charm, mystery, sensuality, romance, all these epithets characterize the brand Eva Lendel, its dresses are the a perfect mix of contemporary details that awaken the desire to create a gentle and at the same time a bright image.</span>
+                <span class="item_title">She got inspired by classics, but wanted to add a hint of her own modern vision. </span>
             </div>
         </section>
-        <!-- БЛОГ-СЛАЙДЕР -->
-        <section class="blog_slider">
-            <div class="text_blog-wrap">
-                <div class="text_blog">
-                    <span class="sub_title">Trunk Shows</span>
-                    <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                    <span class="section_title">USA, Taxes, Kingwood</span>
-                    <time>November 22</time>
+        <!-- КАТАЛОГ -->
+        <section class="catalog">
+            <div class="catalog_filters">
+                <div class="filters_inner">
+                    <span class="section_title">Filters</span>
+                    <div class="filters_list">
+                        <a href="#" class="toggle_btn" data-name="tog_1"><span>Style</span><svg class="icon"><use xlink:href="./images/sprite.svg#dropdown_arrow"></use></svg></a>
+                        <a href="#" class="toggle_btn" data-name="tog_2"><span>Silhouette</span><svg class="icon"><use xlink:href="./images/sprite.svg#dropdown_arrow"></use></svg></a>
+                        <a href="#" class="toggle_btn" data-name="tog_3"><span>Materials</span><svg class="icon"><use xlink:href="./images/sprite.svg#dropdown_arrow"></use></svg></a>
+                    </div>
                 </div>
-                <div class="text_blog">
-                    <span class="sub_title">Trunk Shows</span>
-                    <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                    <span class="section_title">USA, Taxes, Kingwood</span>
-                    <time>November 22</time>
-                </div>
-                <div class="text_blog">
-                    <span class="sub_title">Trunk Shows</span>
-                    <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                    <span class="section_title">USA, Taxes, Kingwood</span>
-                    <time>November 22</time>
+                <div class="fillters_hidden">
+                    <div id="tog_1" class="toggle_inner">
+                        <label>
+                            <input type="radio" name="test" checked>
+                            <span>1Lorem, ipsum dolor.</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="test">
+                            <span>Lorem, ipsum dolor.</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="test">
+                            <span>Lorem, ipsum dolor.</span>
+                        </label>
+                    </div>
+                    <div id="tog_2" class="toggle_inner">
+                        <label>
+                            <input type="radio" name="test" checked>
+                            <span>2Lorem, ipsum dolor.</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="test">
+                            <span>Lorem, ipsum dolor.</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="test">
+                            <span>Lorem, ipsum dolor.</span>
+                        </label>
+                    </div>
+                    <div id="tog_3" class="toggle_inner">
+                        <label>
+                            <input type="radio" name="test" checked>
+                            <span>3Lorem, ipsum dolor.</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="test">
+                            <span>Lorem, ipsum dolor.</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="test">
+                            <span>Lorem, ipsum dolor.</span>
+                        </label>
+                    </div>
                 </div>
             </div>
-            <div class="blog_slider-arrows">
-                <a href="#" class="arrow_left">
-                    <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                    <span>01</span>
-                </a>
-                <a href="#" class="arrow_right">
-                    <span>03</span>
-                    <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                </a>
+            <div class="catalog_list">
+                <figure>
+                    <a href="#" class="catalog_image"><img src="./images/catalog.webp" alt="catalog image"></a>
+                    <figcaption>
+                        <a href="#" class="item_title">Astoria</a>
+                        <a href="#" class="arrow_link">Add to wishlist <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="#" class="catalog_image"><img src="./images/catalog.webp" alt="catalog image"></a>
+                    <figcaption>
+                        <a href="#" class="item_title">Astoria</a>
+                        <a href="#" class="arrow_link">Add to wishlist <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="#" class="catalog_image"><img src="./images/catalog.webp" alt="catalog image"></a>
+                    <figcaption>
+                        <a href="#" class="item_title">Astoria</a>
+                        <a href="#" class="arrow_link">Add to wishlist <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="#" class="catalog_image"><img src="./images/catalog.webp" alt="catalog image"></a>
+                    <figcaption>
+                        <a href="#" class="item_title">Astoria</a>
+                        <a href="#" class="arrow_link">Add to wishlist <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="#" class="catalog_image"><img src="./images/catalog.webp" alt="catalog image"></a>
+                    <figcaption>
+                        <a href="#" class="item_title">Astoria</a>
+                        <a href="#" class="arrow_link">Add to wishlist <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="#" class="catalog_image"><img src="./images/catalog.webp" alt="catalog image"></a>
+                    <figcaption>
+                        <a href="#" class="item_title">Astoria</a>
+                        <a href="#" class="arrow_link">Add to wishlist <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="#" class="catalog_image"><img src="./images/catalog.webp" alt="catalog image"></a>
+                    <figcaption>
+                        <a href="#" class="item_title">Astoria</a>
+                        <a href="#" class="arrow_link">Add to wishlist <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="#" class="catalog_image"><img src="./images/catalog.webp" alt="catalog image"></a>
+                    <figcaption>
+                        <a href="#" class="item_title">Astoria</a>
+                        <a href="#" class="arrow_link">Add to wishlist <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                    </figcaption>
+                </figure>
             </div>
-            <div class="photo_blog-wrap">
-                <div class="photo_blog"><img src="./images/blog_slider-photo.webp" class="photo_anim" alt="blog slider photo"></div>
-                <div class="photo_blog"><img src="./images/blog_slider-photo.webp" class="photo_anim" alt="blog slider photo"></div>
-                <div class="photo_blog"><img src="./images/blog_slider-photo.webp" class="photo_anim" alt="blog slider photo"></div>
+        </section>
+        <!-- ПЛИТКА ДВА -->
+        <section class="tiles_grid">
+            <div class="tiles_element">
+                <span class="main_title">For bride</span>
+                <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                <span class="tiles_text">She got inspired by classics, but wanted to add a hint of her own modern vision.</span>
+            </div>
+            <div class="tiles_element">
+                <span class="main_title">For retailer</span>
+                <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                <span class="tiles_text">More than 100 professional are working hard to sewn dream gowns.</span>
             </div>
         </section>
         <!-- ПЛИТКА -->
@@ -179,84 +205,9 @@
                 <a href="#" class="btn">All wedding colletions<svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
             </div>
         </section>
-        <!-- ПЛИТКА ДВА -->
-        <section class="tiles_grid">
-            <div class="tiles_element">
-                <span class="main_title">For bride</span>
-                <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                <span class="tiles_text">She got inspired by classics, but wanted to add a hint of her own modern vision.</span>
-            </div>
-            <div class="tiles_element">
-                <span class="main_title">For retailer</span>
-                <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                <span class="tiles_text">More than 100 professional are working hard to sewn dream gowns.</span>
-            </div>
-        </section>
-        <!-- СТОРІСИ - ГРІД ПЛИТКА -->
-        <section class="items_grid">
-            <a href="#" class="stories-title sub_title">Stories</a>
-            <ul class="items_grid-list">
-                <li class="item_grid-one">
-                    <a href="#" class="item_grid-image zoom_photo"><img src="./images/stories-list.webp" alt="stories item"></a>
-                    <div class="item_grid-info">
-                        <a href="#" class="item_title">Nicole & sam | breathtaking le ciel santorini wedding</a>
-                        <div class="item_grid-bottom">
-                            <time>15 May 2022</time>
-                            <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                        </div>
-                    </div>
-                </li>
-                <li class="item_grid-one">
-                    <a href="#" class="item_grid-image zoom_photo"><img src="./images/stories-list.webp" alt="stories item"></a>
-                    <div class="item_grid-info">
-                        <a href="#" class="item_title">Nicole & sam | breathtaking le ciel santorini wedding</a>
-                        <div class="item_grid-bottom">
-                            <time>15 May 2022</time>
-                            <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                        </div>
-                    </div>
-                </li>
-                <li class="item_grid-one">
-                    <a href="#" class="item_grid-image zoom_photo"><img src="./images/stories-list.webp" alt="stories item"></a>
-                    <div class="item_grid-info">
-                        <a href="#" class="item_title">Nicole & sam | breathtaking le ciel santorini wedding</a>
-                        <div class="item_grid-bottom">
-                            <time>15 May 2022</time>
-                            <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <!-- ОПИС -->
-        <section class="description">
-            <figure>
-                <div class="desc_images"><img src="./images/description.webp" width="331" height="200" alt="description"></div>
-                <figcaption class="sub_title">Eva Lendel, its dresses are the  perfect mix of contemporary details that awaken the desire to create a gentle and at the same time a bright image.</figcaption>
-            </figure>
-            <ul class="description_list">
-                <li><b>01</b><span>Production space and is climate controlled</span></li>
-                <li><b>02</b><span>More than 100 professional are working hard to sewn dream gowns</span></li>
-                <li><b>03</b><span>The unique design and perfect details create a harmonious blend which the brand reflects in its dresses.</span></li>
-            </ul>
-        </section>
-        <!-- ІНФО -->
-        <section class="three_photo different_photos">
-            <div class="first_img">
-                <img src="./images/three_photo-1.webp" class="photo_anim" alt="three photo">
-            </div>
-            <div class="three_list">
-                <div class="sub_title">Dreams come true</div>
-                <a href="#" class="btn dark_btn">Follow us in Instagram <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-            </div>
-            <div class="second_img">
-                <img src="./images/three_photo-2.webp" class="photo_anim" alt="three photo">
-            </div>
-            <div class="third_img">
-                <img src="./images/three_photo-3.webp" class="photo_anim" alt="three photo">
-            </div>
-        </section>
+
         <div class="styleguide" style="display: none">
+        <!-- <div class="styleguide"> -->
             <article>
                 <h1>LESS IS MORE 2022</h1>
                 <h2>hello world1</h1>
@@ -366,6 +317,7 @@
             <div class="element"></div>
      
         </div>
+      
     </main>
     <footer class="site_footer">
         <nav>

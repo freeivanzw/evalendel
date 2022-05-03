@@ -65,50 +65,66 @@ $(function () {
         });
     };
 
-    $('.toggle_btn').on('click', function(e) {
-        e.preventDefault();
-        if ($(this).parent('.toggle_wrap').hasClass('active')) {
-            $(this).parent('.toggle_wrap').removeClass('active')
-        } else {
-            $('.toggle_wrap').removeClass('active');
-            $(this).parent('.toggle_wrap').addClass('active')
-        }
-    })
-
     $('.open_lang').on('click', function() {
         $(this).parent('.toggle_lang').toggleClass('active');
     })
 
-    $('.big_slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.mini_slider'
-    });
-    $('.mini_slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        asNavFor: '.big_slider',
+    $('.filters_list').children('.toggle_btn').on('click', function(e) {
+        e.preventDefault();
+
+        if ($('#' + $(this).attr('data-name')).hasClass('opened')){
+            $('.filters_list').children('.toggle_btn').removeClass('active');
+            $('#' + $(this).attr('data-name')).removeClass('opened')
+        } else {
+            $('.toggle_inner').removeClass('opened');
+            $('.filters_list').children('.toggle_btn').removeClass('active');
+            $(this).addClass('active');
+            $('#' + $(this).attr('data-name')).addClass('opened');
+        }
     })
 
-    $('.text_blog-wrap').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        asNavFor: '.photo_blog-wrap',
+    $('.main_banner').each(function(index, element) {
+        if ($(element).find('picture').length > 1) {
+            $(element).find('.big_slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: $(element).find('.mini_slider'),
+            });
+            $(element).find('.mini_slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                nextArrow: $(element).find('.arrow_right'),
+                prevArrow: $(element).find('.arrow_left'),
+                asNavFor: $(element).find('.big_slider'),
+            })
+        }
     })
-    $('.photo_blog-wrap').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.text_blog-wrap'
-    });
+
+    $('.blog_slider').each(function(index, element) {
+        if ($(element).find('.text_blog').length > 1) {
+            $(element).find('.text_blog-wrap').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                nextArrow: $(element).find('.arrow_right'),
+                prevArrow: $(element).find('.arrow_left'),
+                asNavFor: $(element).find('.photo_blog-wrap'),
+            })
+            $(element).find('.photo_blog-wrap').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: $(element).find('.text_blog-wrap')
+            });
+        }
+    })
 
     $('.goods_slider').each(function(index, element) {
-        $( $(element).find('.goods_inner')).slick({
+        $($(element).find('.goods_inner')).slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
@@ -163,12 +179,12 @@ $(function () {
         })
     });
 
-    $('.text_blog-wrap').each(function(index, element) {
+    $('.blog_slider').each(function(index, element) {
         gsap.to(element, {
             scrollTrigger: {
                 trigger: element,
                 start: 'top 50%',
-                onEnter: () => $(element).addClass('text_blog-anim'),
+                onEnter: () => $(element).addClass('blog_slider-anim'),
             },
         })
     });
