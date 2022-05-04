@@ -15,6 +15,12 @@ body {
 	flex-direction: column;
 	width: 100%;
 	background-color: var(--site_bg-color);
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	&.body_overflow {
+		overflow: hidden;
+	}
 }
 
 main {
@@ -776,4 +782,15 @@ input[type=text] {
 			}
 		}
 	}
+}
+
+.shadow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #fff;
+	opacity: 0.7;
+	z-index: 11;
 }

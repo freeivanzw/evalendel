@@ -83,6 +83,31 @@ $(function () {
         }
     })
 
+    $dark = $('.shadow');
+    // $dark.on('click', function() {
+    //     $(this).addClass('hidden')
+    // })
+
+    $('.open_menu').on('click', function (e) {
+        e.preventDefault();
+        $('.site_header ').toggleClass('opened');
+        let $toggleName = $('.open_menu').children('span').text();
+        $('.open_menu').children('span').text($('.open_menu').attr('data-close'));
+        $('.open_menu').attr('data-close', $toggleName);
+        $dark.toggleClass('hidden')      
+
+    })
+
+    $dark.on('click', function() {
+        $('.site_header ').toggleClass('opened');
+        let $toggleName = $('.open_menu').children('span').text();
+        $('.open_menu').children('span').text($('.open_menu').attr('data-close'));
+        $('.open_menu').attr('data-close', $toggleName);
+        $(this).addClass('hidden')
+    })
+
+
+
     $('.main_banner').each(function(index, element) {
         if ($(element).find('picture').length > 1) {
             $(element).find('.big_slider').slick({
@@ -215,12 +240,14 @@ $(function () {
     //     })
     // });
 
-    $('.link_item').hover(function () {
+    $('.link_item').on('mouseover', function () {
         let $this = $(this);
-        $(this).addClass('anim_item')
-        setTimeout(function() {
-            $this.removeClass('anim_item')
-        },1000)
+        if (!$(this).hasClass('anim_item')) {
+            $(this).addClass('anim_item')
+            setTimeout(function() {
+                $this.removeClass('anim_item')
+            },1000)
+        }
     });
 
 })

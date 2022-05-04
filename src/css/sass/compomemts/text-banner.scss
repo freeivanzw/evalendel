@@ -12,6 +12,17 @@
         max-width: 915px;
         margin-bottom: 50px;
     }
+
+    .dropdown {
+        margin-bottom: 0;
+        order: 1;
+
+        .overflow {
+            span {
+                justify-content: flex-end;
+            }
+        }
+    }
 }
 
 .banner_inner {
