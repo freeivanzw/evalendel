@@ -58,3 +58,13 @@
         padding: 10px 0 10px 10px;
     }
 }
+
+.btn.show_blog {
+    border-radius: 0;
+    margin: -1px -1px 0 -1px;
+    padding: 30px;
+
+    &:hover .icon {
+        transform: none;
+    }
+}

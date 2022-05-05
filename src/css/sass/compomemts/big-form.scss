@@ -1,0 +1,33 @@
+.big_form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 20px 20px 20px;
+    border: 1px solid var(--border-color);
+    border-top: none;
+    background-color: var(--neutral-color);
+
+    .main_title {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    textarea {
+        height: 130px;
+    }
+}
+
+.form_text {
+    display: block;
+    width: 100%;
+    width: 213px;
+    margin-left: auto;
+    margin-bottom: 30px;
+}

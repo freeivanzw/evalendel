@@ -301,7 +301,8 @@ article {
 }
 
 input[type=email],
-input[type=text] {
+input[type=text],
+textarea {
 	font-family: 'Pangram';
 	font-size: 11px;
 	line-height: 1.4;
@@ -324,6 +325,12 @@ input[type=text] {
 	&.error {
 		border-color: var(--error-color);
 	}
+}
+
+textarea {
+	resize: none;
+	padding-top: 21px;
+	padding-bottom: 13px;
 }
 
 .error_text {
@@ -360,6 +367,10 @@ input[type=text] {
 
 .dropdown_short:hover .drop_arrow {
     background-color: #5ead5a
+}
+
+.dropdown.dropdown-open {
+	z-index: 2;
 }
 
 .dropdown.dropdown_short.dropdown-open {

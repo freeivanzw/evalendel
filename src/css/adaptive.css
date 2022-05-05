@@ -349,6 +349,82 @@
     pointer-events: none;
     transition: 0.5s;
   }
+
+  .logations_select {
+    padding: 55px 30px;
+  }
+
+  .country_name {
+    padding: 45px 30px;
+  }
+
+  .shop_list li {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 50px 30px;
+  }
+  .shop_list li .city {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .shop_list li .shop_info {
+    padding: 0;
+    width: 100%;
+    font-size: 12px;
+  }
+  .shop_list li .contacts {
+    padding: 0;
+    width: 100%;
+  }
+
+  .big_form {
+    padding: 80px 30px;
+  }
+
+  .article_details {
+    padding-top: 160px;
+  }
+
+  .article_title {
+    margin-bottom: 30px;
+  }
+
+  .share_article {
+    padding: 55px 30px;
+  }
+
+  .left_title {
+    padding: 0 30px;
+  }
+
+  .article_text {
+    padding: 0 30px;
+  }
+
+  .article_slider {
+    overflow: unset;
+    flex-wrap: wrap;
+    border-bottom: none;
+    position: relative;
+  }
+  .article_slider::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .article_image {
+    flex: 0 0 33.333%;
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+  .article_image:nth-child(3n+3) {
+    border-right: none;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .site_header {
@@ -646,6 +722,64 @@
   .sub-main_menu {
     width: 297px;
     margin-left: auto;
+  }
+
+  .logations_select {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-gap: 10px;
+    padding: 40px 30px;
+  }
+  .logations_select .section_title {
+    margin: 0;
+  }
+  .logations_select .dropdown {
+    margin: 0;
+  }
+
+  .shop_list li {
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: center;
+  }
+  .shop_list li .shop_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+  .shop_list li .shop_info span + span {
+    margin: 0;
+  }
+  .shop_list li .contacts a {
+    transition: 0.3s;
+  }
+  .shop_list li .contacts a:hover {
+    opacity: 0.5;
+  }
+
+  .big_form .main_title {
+    width: calc(100% - 213px);
+    margin-bottom: 30px;
+    max-width: 890px;
+  }
+  .big_form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+
+  .form_text {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 40px;
+  }
+
+  .left_title {
+    max-width: 666px;
+  }
+
+  .article_bottom {
+    margin: 0 0 30px 0;
   }
 }
 @media only screen and (min-width: 1280px) {
