@@ -10,7 +10,30 @@
         border-bottom: 1px solid var(--border-color);
 
         .sub_title {
+            display: block;
             text-align: center;
+        }
+
+        &.temp_two {
+            padding: 50px 0 0 0;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+
+            .sub_title {
+                text-align: start;
+                margin-bottom: 130px;
+            }
+            
+            figcaption {
+                order: -1;
+                padding: 0 20px;
+            }
+    
+            .desc_images {
+                width: 100%;
+                margin: 0;
+            }
         }
     }
 }
@@ -26,6 +49,14 @@
         object-fit: cover;
         height: auto;
     }
+}
+
+.description_text {
+    font-size: 11px;
+    display: block;
+    margin-bottom: 20px;
+    max-width: 445px;
+    margin-left: auto;
 }
 
 .description_list {

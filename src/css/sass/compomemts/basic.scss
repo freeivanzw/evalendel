@@ -300,6 +300,29 @@ article {
 	margin-bottom: 10px;
 }
 
+.custom_file {
+	input[type=file] {
+		display: none;
+	}
+	
+	.btn {
+		cursor: pointer;
+
+		&::before {
+			content: "+";
+			position: relative;
+			margin-right: 5px;
+			transition: 0.3s;
+		}
+
+		&:hover {
+			&::before {
+				transform: translateX(-5px);
+			}
+		}
+	}
+}
+
 input[type=email],
 input[type=text],
 textarea {

@@ -24,7 +24,7 @@
 </head>
 <body>
     <header class="site_header site_header-anim">
-        <a href="#" class="open_menu"><span>Menu</span></a>
+        <a href="#" class="open_menu" data-close="Close"><span>Menu</span></a>
         <a href="#" class="header_search"><span>Search</span></a>
         <a href="#" class="header_logo"><img src="./images/logo.svg" width="104" height="12" alt="logo"></a>
         <div class="toggle_lang">
@@ -35,99 +35,71 @@
             <button class="open_lang"><span>EN</span></button>
         </div>
         <a href="#" class="wishlist_btn"><span>Wishlist</span></a>
-    </header>
-    <main>
-        <nav class="breadcrumbs">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Collection</a></li>
-                <li><a href="#" class="current">Collection</a></li>
+        <nav class="header_menu">
+            <ul class="main_menu">
+                <li class="link_item"><a href="#"><span>Weddding</span> <img src="./images/banner-mob.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Top sellers</span> <img src="./images/blog-1.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Veils</span> <img src="./images/blog-photo.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Where to buy</span> <img src="./images/blog_slider-photo.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Become a retailer</span> <img src="./images/catalog.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Trunk show</span> <img src="./images/goods_slider.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Contact us</span> <img src="./images/stories-list.webp" alt="Weddding"></a></li>
+            </ul>
+            <ul class="sub-main_menu">
+                <li><a href="#">company</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">team and production</a></li>
             </ul>
         </nav>
-        <!-- БАННУР З ТЕКСТОМ -->
+    </header>
+    <main>
+        <!-- БАННEР З ТЕКСТОМ -->
         <section class="text_banner">
-            <span class="main_title">Weddings Collections</span>
+            <span class="main_title">Contact Us</span>
             <div class="banner_inner">
                 <span class="banner_inner-text">Charm, mystery, sensuality, romance, all these epithets characterize the brand Eva Lendel, its dresses are the a perfect mix of contemporary details that awaken the desire to create a gentle and at the same time a bright image.</span>
             </div>
         </section>
-        <!-- СЛАЙДЕР З ТОВАРОМ -->
-        <section class="goods_slider">
-            <div class="goods_inner">
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
+        <!-- ПРО НАС -->
+        <section class="about">
+            <div class="about_photo">
+                <picture>
+                    <source media="(max-width: 766px)" srcset="./images/banner-mob.webp">
+                    <source media="(min-width: 768px)" srcset="./images/about-photo.webp">
+                    <img src="./images/banner-mob.webp" alt="about_photo">
+                </picture>
             </div>
-            <div class="goods_control">
-                <a href="#" class="goods_more item_title">Less is more</a>
-                <div class="goods_control-inner">
-                    <a href="#" class="arrow_left">
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                        <span>01</span>
-                    </a>
-                    <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                    <a href="#" class="arrow_right">
-                        <span>03</span>
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                    </a>
+            <div class="about_grid">
+                <div class="about_item">
+                    <span class="sub_title">Vision</span>
+                    <div class="photo_item"><img src="./images/three_photo-2.webp" alt="photo item"></div>
+                    <span class="about_text">Eva Lendel is a young brand on the wedding fashion market. It was launched in 2015 with the aim of creating and bringing something new and exclusive to the wedding fashion world. The main idea of the brand is a creation of wedding dresses due to the latest tendencies of world wedding industry.</span>
+                </div>
+                <div class="about_item">
+                    <span class="sub_title">Vision</span>
+                    <div class="photo_item"><img src="./images/three_photo-2.webp" alt="photo item"></div>
+                    <span class="about_text">Eva Lendel is a young brand on the wedding fashion market. It was launched in 2015 with the aim of creating and bringing something new and exclusive to the wedding fashion world. The main idea of the brand is a creation of wedding dresses due to the latest tendencies of world wedding industry.</span>
+                </div>
+            </div>
+            <div class="about_botom">
+                <img src="./images/about-botom.webp" alt="about botom">
+                <div class="about_info">
+                    <span class="section_title">Magic</span>
+                    <span class="about_info-text">The advantage of a young brand is that it is modern, is not dependent from already established canons of wedding fashion and makes its own rules and tendencies itself.</span>
                 </div>
             </div>
         </section>
-        <!-- СЛАЙДЕР З ТОВАРОМ -->
-        <section class="goods_slider">
-            <div class="goods_inner">
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-            </div>
-            <div class="goods_control">
-                <a href="#" class="goods_more item_title">Less is more</a>
-                <div class="goods_control-inner">
-                    <a href="#" class="arrow_left">
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                        <span>01</span>
-                    </a>
-                    <a href="#" class="arrow_link">Golden Hour <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                    <a href="#" class="arrow_right">
-                        <span>03</span>
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- СЛАЙДЕР З ТОВАРОМ -->
-        <section class="goods_slider">
-            <div class="goods_inner">
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-            </div>
-            <div class="goods_control">
-                <a href="#" class="goods_more item_title">Less is more</a>
-                <div class="goods_control-inner">
-                    <a href="#" class="arrow_left">
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                        <span>01</span>
-                    </a>
-                    <a href="#" class="arrow_link">Top Sellers <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                    <a href="#" class="arrow_right">
-                        <span>03</span>
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                    </a>
-                </div>
-            </div>
+        <!-- ОПИС -->
+        <section class="description">
+            <figure>
+                <div class="desc_images"><img src="./images/description.webp" width="331" height="200" alt="description"></div>
+                <figcaption><span class="sub_title">Eva Lendel, its dresses are the  perfect mix of contemporary details that awaken the desire to create a gentle and at the same time a bright image.</span></figcaption>
+            </figure>
+            <ul class="description_list">
+                <li><b>01</b><span>Production space and is climate controlled</span></li>
+                <li><b>02</b><span>More than 100 professional are working hard to sewn dream gowns</span></li>
+                <li><b>03</b><span>The unique design and perfect details create a harmonious blend which the brand reflects in its dresses.</span></li>
+            </ul>
         </section>
         <!-- ПЛИТКА ДВА -->
         <section class="tiles_grid">
@@ -142,13 +114,25 @@
                 <span class="tiles_text">More than 100 professional are working hard to sewn dream gowns.</span>
             </div>
         </section>
-        <!-- ОПИС -->
-        <section class="description">
-            <figure>
-                <div class="desc_images"><img src="./images/description.webp" width="331" height="200" alt="description"></div>
-                <figcaption><span class="sub_title">Eva Lendel, its dresses are the  perfect mix of contemporary details that awaken the desire to create a gentle and at the same time a bright image.</span></figcaption>
-            </figure>
+        <!-- ІНФО -->
+        <section class="three_photo different_photos">
+            <div class="first_img">
+                <img src="./images/three_photo-1.webp" class="photo_anim" alt="three photo">
+            </div>
+            <div class="three_list">
+                <div class="sub_title">Dreams come true</div>
+                <a href="#" class="btn dark_btn">Follow us in Instagram <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+            </div>
+            <div class="second_img">
+                <img src="./images/three_photo-2.webp" class="photo_anim" alt="three photo">
+            </div>
+            <div class="third_img">
+                <img src="./images/three_photo-3.webp" class="photo_anim" alt="three photo">
+            </div>
         </section>
+
+        <div class="shadow hidden"></div>
+
 
         <div class="styleguide" style="display: none">
         <!-- <div class="styleguide"> -->
@@ -261,7 +245,6 @@
             <div class="element"></div>
      
         </div>
-      
     </main>
     <footer class="site_footer">
         <nav>

@@ -24,7 +24,7 @@
 </head>
 <body>
     <header class="site_header site_header-anim">
-        <a href="#" class="open_menu"><span>Menu</span></a>
+        <a href="#" class="open_menu" data-close="Close"><span>Menu</span></a>
         <a href="#" class="header_search"><span>Search</span></a>
         <a href="#" class="header_logo"><img src="./images/logo.svg" width="104" height="12" alt="logo"></a>
         <div class="toggle_lang">
@@ -35,112 +35,91 @@
             <button class="open_lang"><span>EN</span></button>
         </div>
         <a href="#" class="wishlist_btn"><span>Wishlist</span></a>
-    </header>
-    <main>
-        <nav class="breadcrumbs">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Collection</a></li>
-                <li><a href="#" class="current">Collection</a></li>
+        <nav class="header_menu">
+            <ul class="main_menu">
+                <li class="link_item"><a href="#"><span>Weddding</span> <img src="./images/banner-mob.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Top sellers</span> <img src="./images/blog-1.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Veils</span> <img src="./images/blog-photo.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Where to buy</span> <img src="./images/blog_slider-photo.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Become a retailer</span> <img src="./images/catalog.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Trunk show</span> <img src="./images/goods_slider.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Contact us</span> <img src="./images/stories-list.webp" alt="Weddding"></a></li>
+            </ul>
+            <ul class="sub-main_menu">
+                <li><a href="#">company</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">team and production</a></li>
             </ul>
         </nav>
-        <!-- БАННУР З ТЕКСТОМ -->
-        <section class="text_banner">
-            <span class="main_title">Weddings Collections</span>
-            <div class="banner_inner">
-                <span class="banner_inner-text">Charm, mystery, sensuality, romance, all these epithets characterize the brand Eva Lendel, its dresses are the a perfect mix of contemporary details that awaken the desire to create a gentle and at the same time a bright image.</span>
-            </div>
-        </section>
-        <!-- СЛАЙДЕР З ТОВАРОМ -->
-        <section class="goods_slider">
-            <div class="goods_inner">
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-            </div>
-            <div class="goods_control">
-                <a href="#" class="goods_more item_title">Less is more</a>
-                <div class="goods_control-inner">
-                    <a href="#" class="arrow_left">
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                        <span>01</span>
-                    </a>
-                    <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                    <a href="#" class="arrow_right">
-                        <span>03</span>
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                    </a>
+    </header>
+    <main>
+        <!-- ФОРМА -->
+        <section class="big_form">
+            <span class="main_title">Personal assistance</span>
+            <span class="form_text">You can discuss any question with your personal assistant. We’ll be happy to help you.</span>
+            <form>
+                <div class="big_form-column">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input_wrap">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input_wrap">
+                        <input type="text" placeholder="Phone">
+                    </div>
+                    <div class="dropdown order_delivery">
+                        <div class="overflow">
+                            <span>Country</span>
+                            <button type="button" class="drop_arrow"><svg class="icon"><use xlink:href="./images/sprite.svg#dropdown_arrow"></use></svg></button>
+                        </div>
+                        <ul style="display: none;">
+                            <li><a href="#">Нова Пошта</a></li>
+                            <li><a href="#">Кур’єр Нова Пошта</a></li>
+                            <li><a href="#">Кур’єр Міст Експрес</a></li>
+                            <li><a href="#">Самовивіз</a></li>
+                            <li><a href="#">Інше</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown order_delivery">
+                        <div class="overflow">
+                            <span>City</span>
+                            <button type="button" class="drop_arrow"><svg class="icon"><use xlink:href="./images/sprite.svg#dropdown_arrow"></use></svg></button>
+                        </div>
+                        <ul style="display: none;">
+                            <li><a href="#">Нова Пошта</a></li>
+                            <li><a href="#">Кур’єр Нова Пошта</a></li>
+                            <li><a href="#">Кур’єр Міст Експрес</a></li>
+                            <li><a href="#">Самовивіз</a></li>
+                            <li><a href="#">Інше</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- СЛАЙДЕР З ТОВАРОМ -->
-        <section class="goods_slider">
-            <div class="goods_inner">
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-            </div>
-            <div class="goods_control">
-                <a href="#" class="goods_more item_title">Less is more</a>
-                <div class="goods_control-inner">
-                    <a href="#" class="arrow_left">
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                        <span>01</span>
-                    </a>
-                    <a href="#" class="arrow_link">Golden Hour <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                    <a href="#" class="arrow_right">
-                        <span>03</span>
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                    </a>
+                <div class="big_form-column">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="Salon">
+                    </div>
+                    <div class="dropdown order_delivery">
+                        <div class="overflow">
+                            <span>Where did you find info about us</span>
+                            <button type="button" class="drop_arrow"><svg class="icon"><use xlink:href="./images/sprite.svg#dropdown_arrow"></use></svg></button>
+                        </div>
+                        <ul style="display: none;">
+                            <li><a href="#">Нова Пошта</a></li>
+                            <li><a href="#">Кур’єр Нова Пошта</a></li>
+                            <li><a href="#">Кур’єр Міст Експрес</a></li>
+                            <li><a href="#">Самовивіз</a></li>
+                            <li><a href="#">Інше</a></li>
+                        </ul>
+                    </div>
+                    <div class="input_wrap">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="input_wrap">
+                        <button type="submit" class="btn dark_btn">Send a request <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- СЛАЙДЕР З ТОВАРОМ -->
-        <section class="goods_slider">
-            <div class="goods_inner">
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-                <a href="#" class="zoom_photo"><img src="./images/goods_slider.webp" width="478" height="718" alt="#"></a>
-            </div>
-            <div class="goods_control">
-                <a href="#" class="goods_more item_title">Less is more</a>
-                <div class="goods_control-inner">
-                    <a href="#" class="arrow_left">
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                        <span>01</span>
-                    </a>
-                    <a href="#" class="arrow_link">Top Sellers <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                    <a href="#" class="arrow_right">
-                        <span>03</span>
-                        <svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- ПЛИТКА ДВА -->
-        <section class="tiles_grid">
-            <div class="tiles_element">
-                <span class="main_title">For bride</span>
-                <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                <span class="tiles_text">She got inspired by classics, but wanted to add a hint of her own modern vision.</span>
-            </div>
-            <div class="tiles_element">
-                <span class="main_title">For retailer</span>
-                <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-                <span class="tiles_text">More than 100 professional are working hard to sewn dream gowns.</span>
-            </div>
+            </form>
         </section>
         <!-- ОПИС -->
         <section class="description">
@@ -149,9 +128,10 @@
                 <figcaption><span class="sub_title">Eva Lendel, its dresses are the  perfect mix of contemporary details that awaken the desire to create a gentle and at the same time a bright image.</span></figcaption>
             </figure>
         </section>
+        <div class="shadow hidden"></div>
+
 
         <div class="styleguide" style="display: none">
-        <!-- <div class="styleguide"> -->
             <article>
                 <h1>LESS IS MORE 2022</h1>
                 <h2>hello world1</h1>
@@ -261,7 +241,6 @@
             <div class="element"></div>
      
         </div>
-      
     </main>
     <footer class="site_footer">
         <nav>
