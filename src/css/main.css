@@ -499,7 +499,7 @@ textarea {
   line-height: 1.4;
   color: var(--error-color);
   display: inline-block;
-  margin-bottom: 3px;
+  margin-top: 3px;
 }
 
 /* ДРОПДАУН */
@@ -2138,6 +2138,9 @@ textarea {
 .catalog_list figcaption .arrow_link {
   padding: 10px;
 }
+.catalog_list figcaption .btn {
+  padding: 10px 15px;
+}
 
 .catalog_image {
   display: block;
@@ -2576,4 +2579,210 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.workers {
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+.workers > .sub_title {
+  display: block;
+  width: 100%;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.workers_list {
+  display: flex;
+  flex-direction: column;
+}
+.workers_list > li {
+  border-bottom: 1px solid var(--border-color);
+}
+.workers_list figcaption {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+.workers_list .item_title {
+  margin-bottom: 80px;
+}
+.workers_list .profession {
+  font-family: "Pangram";
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.worker_photo {
+  display: block;
+  height: 390px;
+  border-bottom: 1px solid var(--border-color);
+}
+.worker_photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.join_us {
+  font-family: "Presicav";
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+  height: 100%;
+  padding: 30px;
+}
+
+.privacy_policy {
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.privacy_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy_item {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.privacy_header {
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.privacy_header .sub_title {
+  margin-right: 15px;
+}
+
+.faq_title {
+  font-family: "Presicav";
+  font-size: 18px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.open_info.btn {
+  display: flex;
+  flex: 0 0 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  padding: 0;
+  height: 37px;
+  width: 50px;
+}
+.open_info.btn:hover .icon {
+  transform: none;
+}
+.open_info.btn .icon {
+  margin: 0;
+}
+
+.privacy_body {
+  padding: 30px 20px;
+  display: none;
+}
+.privacy_body article {
+  width: 100%;
+  max-width: 562px;
+  margin-left: auto;
+}
+
+.privacy_item.active .privacy_body {
+  display: block;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  border-left: 1px solid var(--border-color);
+}
+.search.search_big {
+  padding-top: 50px;
+  min-height: calc(var(--vh, 1vh) * 100 - 48px);
+}
+
+.search_title {
+  margin-bottom: 30px;
+}
+
+.search_inner {
+  width: 100%;
+  margin-bottom: auto;
+}
+.search_inner input {
+  display: block;
+  width: 100%;
+}
+
+.search_btn {
+  font-size: 0;
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 70px;
+  height: 40px;
+}
+.search_btn:hover .icon {
+  transform: rotate(-90deg);
+}
+.search_btn .icon {
+  margin: 0;
+  transform: rotate(-90deg);
+}
+
+.search_text {
+  display: block;
+  margin-left: auto;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 345px;
+}
+
+.search_banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 20px 30px 20px;
+  min-height: calc(var(--vh, 1vh) * 60);
+  border-bottom: 1px solid var(--border-color);
+}
+.search_banner .main_title {
+  margin-bottom: 30px;
+}
+
+.search_banner-text {
+  font-family: "Presicav";
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.search_cat-header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+  padding: 30px 20px;
+}
+.search_cat-header .sub_title {
+  margin-bottom: 15px;
+}
+
+.counter_result {
+  font-family: "Presicav";
+  text-transform: uppercase;
+  font-size: 10px;
 }

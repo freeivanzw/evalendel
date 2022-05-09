@@ -106,6 +106,12 @@ $(function () {
         $(this).addClass('hidden')
     })
 
+    $('.open_info').on('click', function(e) {
+        e.preventDefault();
+        
+        $(this).closest('.privacy_item').toggleClass('active')
+    })
+
 
 
     $('.main_banner').each(function(index, element) {

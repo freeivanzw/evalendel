@@ -24,7 +24,7 @@
 </head>
 <body>
     <header class="site_header site_header-anim">
-        <a href="#" class="open_menu"><span>Menu</span></a>
+        <a href="#" class="open_menu" data-close="Close"><span>Menu</span></a>
         <a href="#" class="header_search"><span>Search</span></a>
         <a href="#" class="header_logo"><img src="./images/logo.svg" width="104" height="12" alt="logo"></a>
         <div class="toggle_lang">
@@ -35,86 +35,153 @@
             <button class="open_lang"><span>EN</span></button>
         </div>
         <a href="#" class="wishlist_btn"><span>Wishlist</span></a>
+        <nav class="header_menu">
+            <ul class="main_menu">
+                <li class="link_item"><a href="#"><span>Weddding</span> <img src="./images/banner-mob.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Top sellers</span> <img src="./images/blog-1.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Veils</span> <img src="./images/blog-photo.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Where to buy</span> <img src="./images/blog_slider-photo.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Become a retailer</span> <img src="./images/catalog.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Trunk show</span> <img src="./images/goods_slider.webp" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Contact us</span> <img src="./images/stories-list.webp" alt="Weddding"></a></li>
+            </ul>
+            <ul class="sub-main_menu">
+                <li><a href="#">company</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">team and production</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <nav class="breadcrumbs">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Collection</a></li>
-                <li><a href="#" class="current">Collection</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#" class="current">Search result</a></li>
             </ul>
         </nav>
-        <!-- БАННEР З ТЕКСТОМ -->
-        <section class="text_banner">
-            <span class="main_title">Trunk Shows</span>
-            <div class="banner_inner">
-                <div class="dropdown order_delivery">
-                    <div class="overflow">
-                        <span>Choose Locatioon</span>
-                        <button type="button" class="drop_arrow"><svg class="icon"><use xlink:href="./images/sprite.svg#dropdown_arrow"></use></svg></button>
-                    </div>
-                    <ul style="display: none;">
-                        <li><a href="#">Choose Locatioon</a></li>
-                        <li><a href="#">Choose Locatioon</a></li>
-                        <li><a href="#">Choose Locatioon</a></li>
-                        <li><a href="#">Choose Locatioon</a></li>
-                    </ul>
-                </div>
-                <span class="banner_inner-text">Charm, mystery, sensuality, romance, all these epithets characterize the brand Eva Lendel, its dresses are the a perfect mix of contemporary details that awaken the desire to create a gentle and at the same time a bright image.</span>
+        <!-- пошук -->
+        <section class="search_banner">
+            <span class="main_title">Search results</span>
+            <span class="search_banner-text">For short dress</span>
+        </section>
+        <!-- КАТАЛОГ -->
+        <section class="catalog">
+            <!-- пошук -->
+            <div class="search_cat-header">
+                <span class="sub_title">Collections</span>
+                <span class="counter_result">5 items found</span>
+            </div>
+            <div class="catalog_list">
+                <figure>
+                    <a href="#" class="catalog_image"><img src="./images/catalog.webp" alt="catalog image"></a>
+                    <figcaption>
+                        <a href="#" class="item_title">Astoria</a>
+                        <a href="#" class="arrow_link">Add to wishlist <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="#" class="catalog_image"><img src="./images/catalog.webp" alt="catalog image"></a>
+                    <figcaption>
+                        <a href="#" class="item_title">Astoria</a>
+                        <a href="#" class="arrow_link">Add to wishlist <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="#" class="catalog_image"><img src="./images/catalog.webp" alt="catalog image"></a>
+                    <figcaption>
+                        <a href="#" class="item_title">Astoria</a>
+                        <a href="#" class="arrow_link">Add to wishlist <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                    </figcaption>
+                </figure>
             </div>
         </section>
-        <!-- СПИСОК СТАТТЕЙ -->
-        <section class="blog_list">
-            <figure class="blog_element">
-                <a href="#" class="blog_photo zoom_photo"><img src="./images/blog-photo.webp" alt="blog photo"></a>
-                <figcaption>
-                    <a href="#" class="section_title">Lorem ipsum dolor sit amet consectetur.</a>
-                    <div class="blog_info">
-                        <time>November 11 - November 22</time>
-                        <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+        <!-- СТОРІСИ - ГРІД ПЛИТКА -->
+        <section class="items_grid">
+            <!-- пошук -->
+            <div class="search_cat-header">
+                <span class="sub_title">Articles</span>
+                <span class="counter_result">5 items found</span>
+            </div>
+            <!-- СПИСОК СТАТТЕЙ -->
+            <ul class="items_grid-list">
+                <li class="item_grid-one">
+                    <a href="#" class="item_grid-image zoom_photo"><img src="./images/stories-list.webp" alt="stories item"></a>
+                    <div class="item_grid-info">
+                        <a href="#" class="item_title">Nicole & sam | breathtaking le ciel santorini wedding</a>
+                        <div class="item_grid-bottom">
+                            <time>15 May 2022</time>
+                            <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                        </div>
                     </div>
-                </figcaption>
-            </figure>
-            <figure class="blog_element">
-                <a href="#" class="blog_photo zoom_photo"><img src="./images/blog-photo.webp" alt="blog photo"></a>
-                <figcaption>
-                    <a href="#" class="section_title">Lorem ipsum dolor sit amet consectetur.</a>
-                    <div class="blog_info">
-                        <time>November 11 - November 22</time>
-                        <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                </li>
+                <li class="item_grid-one">
+                    <a href="#" class="item_grid-image zoom_photo"><img src="./images/stories-list.webp" alt="stories item"></a>
+                    <div class="item_grid-info">
+                        <a href="#" class="item_title">Nicole & sam | breathtaking le ciel santorini wedding</a>
+                        <div class="item_grid-bottom">
+                            <time>15 May 2022</time>
+                            <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                        </div>
                     </div>
-                </figcaption>
-            </figure>
-            <figure class="blog_element">
-                <a href="#" class="blog_photo zoom_photo"><img src="./images/blog-photo.webp" alt="blog photo"></a>
-                <figcaption>
-                    <a href="#" class="section_title">Lorem ipsum dolor sit amet consectetur.</a>
-                    <div class="blog_info">
-                        <time>November 11 - November 22</time>
-                        <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                </li>
+                <li class="item_grid-one">
+                    <a href="#" class="item_grid-image zoom_photo"><img src="./images/stories-list.webp" alt="stories item"></a>
+                    <div class="item_grid-info">
+                        <a href="#" class="item_title">Nicole & sam | breathtaking le ciel santorini wedding</a>
+                        <div class="item_grid-bottom">
+                            <time>15 May 2022</time>
+                            <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                        </div>
                     </div>
-                </figcaption>
-            </figure>
+                </li>
+                <li class="item_grid-one">
+                    <a href="#" class="item_grid-image zoom_photo"><img src="./images/stories-list.webp" alt="stories item"></a>
+                    <div class="item_grid-info">
+                        <a href="#" class="item_title">Nicole & sam | breathtaking le ciel santorini wedding</a>
+                        <div class="item_grid-bottom">
+                            <time>15 May 2022</time>
+                            <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item_grid-one">
+                    <a href="#" class="item_grid-image zoom_photo"><img src="./images/stories-list.webp" alt="stories item"></a>
+                    <div class="item_grid-info">
+                        <a href="#" class="item_title">Nicole & sam | breathtaking le ciel santorini wedding</a>
+                        <div class="item_grid-bottom">
+                            <time>15 May 2022</time>
+                            <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item_grid-one">
+                    <a href="#" class="item_grid-image zoom_photo"><img src="./images/stories-list.webp" alt="stories item"></a>
+                    <div class="item_grid-info">
+                        <a href="#" class="item_title">Nicole & sam | breathtaking le ciel santorini wedding</a>
+                        <div class="item_grid-bottom">
+                            <time>15 May 2022</time>
+                            <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="btn show_blog">Show more<svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg></a>
         </section>
-        <!-- ІНФО -->
-        <section class="three_photo different_photos">
-            <div class="first_img">
-                <img src="./images/three_photo-1.webp" class="photo_anim" alt="three photo">
-            </div>
-            <div class="three_list">
-                <div class="sub_title">Dreams come true</div>
-                <a href="#" class="btn dark_btn">Follow us in Instagram <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
-            </div>
-            <div class="second_img">
-                <img src="./images/three_photo-2.webp" class="photo_anim" alt="three photo">
-            </div>
-            <div class="third_img">
-                <img src="./images/three_photo-3.webp" class="photo_anim" alt="three photo">
+        <!-- ПОШУК -->
+        <section class="search">
+            <span class="sub_title search_title">Search for something else</span>
+            <div class="search_inner input_wrap">
+                <input type="text" class="error">
+                <a href="#" class="search_btn btn"><svg class="icon"><use xlink:href="./images/sprite.svg#down_arrow"></use></svg>search</a>
+                <span class="error_text">Invalid email, please enter correct data</span>
             </div>
         </section>
 
+        <div class="shadow hidden"></div>
+
+
         <div class="styleguide" style="display: none">
-        <!-- <div class="styleguide"> -->
             <article>
                 <h1>LESS IS MORE 2022</h1>
                 <h2>hello world1</h1>
@@ -224,7 +291,6 @@
             <div class="element"></div>
      
         </div>
-      
     </main>
     <footer class="site_footer">
         <nav>

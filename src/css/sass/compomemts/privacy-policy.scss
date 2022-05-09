@@ -1,0 +1,67 @@
+.privacy_policy {
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.privacy_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.privacy_item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.privacy_header {
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .sub_title {
+        margin-right: 15px;
+    }
+}
+
+.faq_title {
+    font-family: 'Presicav';
+    font-size: 18px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.open_info.btn {
+    display: flex;
+    flex: 0 0 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    padding: 0;
+    height: 37px;
+    width: 50px;
+
+    &:hover {
+        .icon {
+            transform: none;
+        }
+    }
+
+    .icon {
+        margin: 0;
+    }
+}
+
+.privacy_body {
+    padding: 30px 20px;
+    display: none;
+
+    article { 
+        width: 100%;
+        max-width: 562px;
+        margin-left: auto;
+    }
+}
+
+.privacy_item.active .privacy_body {
+    display: block;
+}

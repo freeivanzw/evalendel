@@ -1,0 +1,93 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    border-left: 1px solid var(--border-color);
+
+    &.search_big {
+        padding-top: 50px;
+        min-height:  calc(var(--vh, 1vh) * 100 - 48px);
+    }
+}
+
+.search_title {
+    margin-bottom: 30px;
+}
+
+.search_inner {
+    width: 100%;
+    margin-bottom: auto;
+
+    input {
+        display: block;
+        width: 100%;
+    }
+}
+
+.search_btn {
+    font-size: 0;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 70px;
+    height: 40px;
+
+    &:hover {
+        .icon {
+            transform: rotate(-90deg);
+        }
+    }
+    
+    .icon {
+        margin: 0;
+        transform: rotate(-90deg);
+    }
+}
+
+.search_text {
+    display: block;
+    margin-left: auto;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 345px;
+}
+
+.search_banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 20px 30px 20px;
+    min-height:  calc(var(--vh, 1vh) * 60);
+    border-bottom: 1px solid var(--border-color);
+
+    .main_title {
+        margin-bottom: 30px;
+    }
+}
+
+.search_banner-text {
+    font-family: 'Presicav';
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.search_cat-header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border-color);
+    padding: 30px 20px;
+
+    .sub_title {
+        margin-bottom: 15px;
+    }
+}
+
+.counter_result {
+    font-family: 'Presicav';
+    text-transform: uppercase;
+    font-size: 10px;
+}
