@@ -112,7 +112,25 @@ $(function () {
         $(this).closest('.privacy_item').toggleClass('active')
     })
 
-
+    $('.details_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        mobileFirst: true,
+          responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 1279,
+                settings: "unslick"
+            }
+        ]
+    });
 
     $('.main_banner').each(function(index, element) {
         if ($(element).find('picture').length > 1) {
