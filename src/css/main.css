@@ -1333,6 +1333,7 @@ textarea {
   justify-content: space-between;
   position: relative;
   padding: 30px 20px;
+  width: 100%;
   min-height: 50vh;
   border-right: 1px solid var(--border-color);
   background-color: var(--site_bg-color);
