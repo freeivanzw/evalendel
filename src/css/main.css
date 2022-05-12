@@ -1850,7 +1850,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 109px;
+  height: 124px;
   padding: 0 20px;
   border-bottom: 1px solid var(--border-color);
 }
