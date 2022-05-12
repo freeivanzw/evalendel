@@ -4,7 +4,7 @@
 .blog_element {
     height:  calc(var(--vh, 1vh) * 100);
     min-height: 450px;
-    border: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
     border-top: none;
 
     figcaption {
