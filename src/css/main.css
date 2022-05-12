@@ -1983,7 +1983,7 @@ textarea {
 ----- БАННEР З ТЕКСТОМ -----
 */
 .text_banner {
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   border-top: none;
   display: flex;
   flex-direction: column;
@@ -2503,7 +2503,7 @@ textarea {
 ----- ПРО НАС -----
 */
 .about {
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   border-top: none;
 }
 
