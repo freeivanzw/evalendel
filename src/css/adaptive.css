@@ -267,6 +267,7 @@
     min-height: 82vh;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 48px;
   }
   .text_banner .dropdown {
     order: 0;
