@@ -2022,8 +2022,7 @@ textarea {
 */
 .goods_slider {
   height: calc(var(--vh, 1vh) * 100);
-  border: 1px solid var(--border-color);
-  border-top: none;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .goods_inner {
