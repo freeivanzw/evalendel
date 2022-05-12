@@ -1671,6 +1671,7 @@ textarea {
   z-index: 1;
 }
 .blog_slider-arrows a {
+  color: inherit;
   font-size: 10px;
   text-decoration: none;
   display: flex;
