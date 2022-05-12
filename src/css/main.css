@@ -2328,8 +2328,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   padding: 30px 20px 20px 20px;
-  border: 1px solid var(--border-color);
-  border-top: none;
+  border-bottom: 1px solid var(--border-color);
   background-color: var(--neutral-color);
 }
 .big_form .main_title {
@@ -2457,8 +2456,6 @@ textarea {
 .contacts_grid {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
 }
 
 .cantacts_item {
