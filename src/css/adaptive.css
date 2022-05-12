@@ -603,6 +603,11 @@
     margin-bottom: 0;
   }
 
+  .sizes_wrap,
+.details_wrap {
+    padding: 20px;
+  }
+
   .details_description {
     min-height: 110px;
   }
@@ -1149,7 +1154,16 @@
     padding: 20px 30px;
   }
 
+  .breadcrumbs.breadcrumbs_details {
+    top: 20px;
+  }
+
   .details_description {
-    min-height: 230px;
+    min-height: 250px;
+  }
+
+  .sizes_wrap,
+.details_wrap {
+    padding: 20px 30px;
   }
 }
