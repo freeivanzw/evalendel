@@ -2362,8 +2362,6 @@ textarea {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  border-right: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
 }
 .article_details time {
   font-family: "Pangram";
