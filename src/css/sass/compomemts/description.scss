@@ -1,6 +1,7 @@
+/*
+----- ОПИС -----
+*/
 .description {
-    border-right: 1px solid var(--border-color);
-    border-left: 1px solid var(--border-color);
     
     figure {
         display: flex;
@@ -66,6 +67,7 @@
         font-size: 15px;
         line-height: 1.4;
         text-transform: uppercase;
+        letter-spacing: 0.5px;
         display: flex;
         flex-direction: column;
         padding: 24px 20px 30px 20px;

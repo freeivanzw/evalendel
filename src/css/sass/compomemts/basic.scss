@@ -1,4 +1,6 @@
-
+/*
+------ ЗАГАЛЬНІ СТИЛІ ------
+*/
 BODY, HTML {
 	font-family: 'Pangram', sans-serif;
 	font-style: normal;
@@ -26,6 +28,8 @@ body {
 main {
 	flex: 1 0 auto;
 	position: relative;
+	border-left: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color);
 }
 
 .hidden {
@@ -39,6 +43,7 @@ button {
 	padding: 0;
 }
 
+/* заголовки */
 h1,
 .main_title {
 	text-decoration: none;
@@ -131,6 +136,7 @@ a {
 		text-decoration: none;
 		font-size: inherit;
 		line-height: inherit;
+		letter-spacing: 1px;
 		color: var(--link-color);
 		display: flex;
 		align-items: center;
@@ -194,6 +200,8 @@ article {
 		margin-bottom: 15px;
 	}
 }
+
+/* кнопка */
 
 .btn {
 	font-family: 'Pangram', sans-serif;

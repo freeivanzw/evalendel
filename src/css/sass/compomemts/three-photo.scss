@@ -1,9 +1,12 @@
+/*
+----- ІНФО -----
+*/
 .three_photo {
     display: flex;
     flex-direction: column;
     padding: 40px 20px 20px 20px;
     position: relative;
-    border: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
     border-top: none;
     transform: translateY(400px);
     transition: 1s;

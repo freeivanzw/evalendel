@@ -1,8 +1,6 @@
-.items_grid {
-    border-left: 1px solid var(--border-color);
-    border-right: 1px solid var(--border-color);
-}
-
+/*
+------ СТОРІСИ - ГРІД ПЛИТКА -----
+*/
 .stories-title {
     display: flex;
     align-items: center;
@@ -40,7 +38,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px 30px 30px 30px;
+    padding: 20px;
     height: 33%;
 
     .item_title {

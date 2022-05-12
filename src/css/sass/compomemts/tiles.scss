@@ -1,7 +1,6 @@
-.tiles {
-
-}
-
+/*
+----- ПЛИТКА -----
+*/
 .tiles_list {
     display: flex;
     flex-direction: column;
@@ -12,7 +11,7 @@
     flex-direction: column;
     height:  calc(var(--vh, 1vh) * 100);
     position: relative;
-    border: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
     border-top: none;
 }
 

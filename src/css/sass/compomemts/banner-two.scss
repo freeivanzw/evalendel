@@ -1,7 +1,11 @@
+/*
+----- БАННЕР ДВА -----
+*/
 .banner_two {
     display: flex;
     flex-direction: column;
     min-height:  calc(var(--vh, 1vh) * 100);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .banner_text {

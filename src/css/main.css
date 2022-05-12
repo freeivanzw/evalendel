@@ -183,6 +183,9 @@ select {
   display: none;
 }
 
+/*
+------ ЗАГАЛЬНІ СТИЛІ ------
+*/
 BODY, HTML {
   font-family: "Pangram", sans-serif;
   font-style: normal;
@@ -209,6 +212,8 @@ body.body_overflow {
 main {
   flex: 1 0 auto;
   position: relative;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 }
 
 .hidden {
@@ -222,6 +227,7 @@ button {
   padding: 0;
 }
 
+/* заголовки */
 h1,
 .main_title {
   text-decoration: none;
@@ -305,6 +311,7 @@ a.arrow_link {
   text-decoration: none;
   font-size: inherit;
   line-height: inherit;
+  letter-spacing: 1px;
   color: var(--link-color);
   display: flex;
   align-items: center;
@@ -355,6 +362,7 @@ article > * {
   margin-bottom: 15px;
 }
 
+/* кнопка */
 .btn {
   font-family: "Pangram", sans-serif;
   font-size: 12px;
@@ -945,6 +953,9 @@ textarea {
   z-index: 11;
 }
 
+/*
+----- ХЕДЕР -----
+*/
 .site_header {
   display: flex;
   align-items: center;
@@ -1145,6 +1156,9 @@ textarea {
     transform: translateY(0);
   }
 }
+/*
+----- ФУТЕР -----
+*/
 .site_footer {
   font-family: "Presicav";
   flex: 0 0 auto;
@@ -1173,6 +1187,7 @@ textarea {
   margin-bottom: 40px;
 }
 .footer_menu > li > a {
+  font-family: "Presicav";
   font-size: 4vw;
   line-height: 1.4;
   margin-bottom: 20px;
@@ -1220,6 +1235,7 @@ textarea {
 }
 
 .subscribe_title {
+  font-family: "Presicav";
   font-size: 4vw;
   line-height: 1.4;
   text-transform: uppercase;
@@ -1240,12 +1256,13 @@ textarea {
   height: 78px;
 }
 
+/*
+----- БАННЕР -----
+*/
 .main_banner {
   width: 100%;
   min-height: calc(var(--vh, 1vh) * 100 - 48px);
   position: relative;
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
 }
 
 .big_slider {
@@ -1315,7 +1332,7 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  padding: 30px;
+  padding: 30px 20px;
   min-height: 50vh;
   border-right: 1px solid var(--border-color);
   background-color: var(--site_bg-color);
@@ -1437,10 +1454,14 @@ textarea {
     left: 100%;
   }
 }
+/*
+----- БАННЕР ДВА -----
+*/
 .banner_two {
   display: flex;
   flex-direction: column;
   min-height: calc(var(--vh, 1vh) * 100);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .banner_text {
@@ -1496,12 +1517,15 @@ textarea {
   object-fit: cover;
 }
 
+/*
+----- ІНФО -----
+*/
 .three_photo {
   display: flex;
   flex-direction: column;
   padding: 40px 20px 20px 20px;
   position: relative;
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   border-top: none;
   transform: translateY(400px);
   transition: 1s;
@@ -1569,8 +1593,11 @@ textarea {
   margin: -200px 0 24px auto;
 }
 
+/*
+----- БЛОГ-СЛАЙДЕР -----
+*/
 .blog_slider {
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   border-top: none;
   position: relative;
 }
@@ -1696,6 +1723,9 @@ textarea {
   object-fit: cover;
 }
 
+/*
+----- ПЛИТКА -----
+*/
 .tiles_list {
   display: flex;
   flex-direction: column;
@@ -1706,7 +1736,7 @@ textarea {
   flex-direction: column;
   height: calc(var(--vh, 1vh) * 100);
   position: relative;
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   border-top: none;
 }
 
@@ -1760,6 +1790,9 @@ textarea {
   transform: translate(-50%, -50%);
 }
 
+/*
+----- ПЛИТКА ДВА -----
+*/
 .tiles_element {
   display: flex;
   flex-direction: column;
@@ -1767,7 +1800,7 @@ textarea {
   padding: 30px 20px 20px 30px;
   width: 100%;
   min-height: calc(var(--vh, 1vh) * 50);
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   border-top: none;
   position: relative;
 }
@@ -1807,11 +1840,9 @@ textarea {
   width: 165px;
 }
 
-.items_grid {
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-}
-
+/*
+------ СТОРІСИ - ГРІД ПЛИТКА -----
+*/
 .stories-title {
   display: flex;
   align-items: center;
@@ -1848,7 +1879,7 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 30px 30px 30px 30px;
+  padding: 20px;
   height: 33%;
 }
 .item_grid-info .item_title {
@@ -1874,10 +1905,9 @@ textarea {
   transform: none;
 }
 
-.description {
-  border-right: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
-}
+/*
+----- ОПИС -----
+*/
 .description figure {
   display: flex;
   flex-direction: column;
@@ -1933,6 +1963,7 @@ textarea {
   font-size: 15px;
   line-height: 1.4;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
   display: flex;
   flex-direction: column;
   padding: 24px 20px 30px 20px;
@@ -1945,6 +1976,9 @@ textarea {
   font-weight: 400;
 }
 
+/*
+----- БАННEР З ТЕКСТОМ -----
+*/
 .text_banner {
   border: 1px solid var(--border-color);
   border-top: none;
@@ -1976,6 +2010,9 @@ textarea {
   align-items: flex-end;
 }
 
+/*
+----- СЛАЙДЕР З ТОВАРОМ -----
+*/
 .goods_slider {
   height: calc(var(--vh, 1vh) * 100);
   border: 1px solid var(--border-color);
@@ -2060,6 +2097,9 @@ textarea {
   padding: 10px;
 }
 
+/*
+----- КАТАЛОГ -----
+*/
 .catalog {
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
@@ -2160,6 +2200,9 @@ textarea {
   width: 100%;
 }
 
+/*
+----- СПИСОК СТАТТЕЙ -----
+*/
 .blog_element {
   height: calc(var(--vh, 1vh) * 100);
   min-height: 450px;
@@ -2202,6 +2245,9 @@ textarea {
   object-fit: cover;
 }
 
+/*
+----- ЛОКАЦІЇ МАГАЗИНІВ -----
+*/
 .locations {
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
@@ -2274,6 +2320,9 @@ textarea {
   margin-top: 10px;
 }
 
+/*
+----- ФОРМА -----
+*/
 .big_form {
   display: flex;
   flex-wrap: wrap;
@@ -2303,6 +2352,9 @@ textarea {
   margin-bottom: 30px;
 }
 
+/*
+----- СТАТТЯ -----
+*/
 .article_details {
   display: flex;
   flex-direction: column;
@@ -2400,6 +2452,9 @@ textarea {
   height: auto;
 }
 
+/*
+----- КОНТАКТИ СІТКА -----
+*/
 .contacts_grid {
   display: flex;
   flex-direction: column;
@@ -2441,6 +2496,9 @@ textarea {
   margin-top: 10px;
 }
 
+/*
+----- ПРО НАС -----
+*/
 .about {
   border: 1px solid var(--border-color);
   border-top: none;
@@ -2529,6 +2587,9 @@ textarea {
   max-width: 195px;
 }
 
+/*
+----- СТАТТЯ ПРО НАС -----
+*/
 .production {
   display: flex;
   flex-direction: column;
@@ -2581,6 +2642,9 @@ textarea {
   object-fit: cover;
 }
 
+/*
+----- СПИСОК ПРАЦІВНИКІВ -----
+*/
 .workers {
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
@@ -2639,6 +2703,9 @@ textarea {
   padding: 30px;
 }
 
+/*
+----- ПОЛІТИКА КОНФІДЕНЦІЙНОСТ -----
+*/
 .privacy_policy {
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
@@ -2701,6 +2768,9 @@ textarea {
   display: block;
 }
 
+/*
+----- ПОШУК -----
+*/
 .search {
   display: flex;
   flex-direction: column;
@@ -2787,6 +2857,9 @@ textarea {
   font-size: 10px;
 }
 
+/*
+----- ДЕТАЛЬНЕ ТОВАРУ -----
+*/
 .catalog_details {
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
@@ -2816,6 +2889,10 @@ textarea {
   width: 10px;
   height: 10px;
   transform: rotate(90deg);
+  transition: 0.3s;
+}
+.details_prev:hover .icon {
+  transform: translateX(-3px) rotate(90deg);
 }
 
 .details_next .icon {
@@ -2823,6 +2900,10 @@ textarea {
   width: 10px;
   height: 10px;
   transform: rotate(-90deg);
+  transition: 0.3s;
+}
+.details_next:hover .icon {
+  transform: translateX(3px) rotate(-90deg);
 }
 
 .details_slider {
@@ -2922,6 +3003,11 @@ textarea {
   display: flex;
   align-items: center;
   font-size: 12px;
+  transition: 0.3s;
+}
+.sizes_wrap li a:hover,
+.details_wrap li a:hover {
+  opacity: 0.6;
 }
 .sizes_wrap .arrow_link,
 .details_wrap .arrow_link {

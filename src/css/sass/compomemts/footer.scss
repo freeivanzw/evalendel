@@ -1,3 +1,6 @@
+/*
+----- ФУТЕР -----
+*/
 .site_footer {
     font-family: 'Presicav';
     flex: 0 0 auto;
@@ -27,6 +30,7 @@
         margin-bottom: 40px;
 
         & > a {
+            font-family: 'Presicav';
             font-size: 4vw;
             line-height: 1.4;
             margin-bottom: 20px;
@@ -84,6 +88,7 @@
 }
 
 .subscribe_title {
+    font-family: 'Presicav';
     font-size: 4vw;
     line-height: 1.4;
     text-transform: uppercase;

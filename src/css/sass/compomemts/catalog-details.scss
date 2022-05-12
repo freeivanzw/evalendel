@@ -1,3 +1,6 @@
+/*
+----- ДЕТАЛЬНЕ ТОВАРУ -----
+*/
 .catalog_details {
     border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
@@ -29,6 +32,11 @@
         width: 10px;
         height: 10px;
         transform: rotate(90deg);
+        transition: 0.3s;
+    }
+
+    &:hover .icon {
+        transform: translateX(-3px) rotate(90deg);
     }
 }
 
@@ -38,6 +46,11 @@
         width: 10px;
         height: 10px;
         transform: rotate(-90deg);
+        transition: 0.3s;
+    }
+
+    &:hover .icon {
+        transform: translateX(3px) rotate(-90deg);
     }
 }
 
@@ -146,6 +159,11 @@
             display: flex;
             align-items: center;
             font-size: 12px;
+            transition: 0.3s;
+            
+            &:hover {
+                opacity: 0.6;
+            }
         }
     }
 
