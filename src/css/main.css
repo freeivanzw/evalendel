@@ -2560,6 +2560,7 @@ textarea {
 .about_botom > img {
   display: block;
   width: 100%;
+  height: auto;
 }
 .about_botom > img + .about_info {
   position: absolute;
