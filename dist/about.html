@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evalendel</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+
+    <script>
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    </script>
+</head>
+<body>
+    <header class="site_header site_header-anim">
+        <a href="#" class="open_menu" data-close="Close"><span>Menu</span></a>
+        <a href="#" class="header_search"><span>Search</span></a>
+        <a href="#" class="header_logo"><img src="./images/logo.svg" width="104" height="12" alt="logo"></a>
+        <div class="toggle_lang">
+            <ul>
+                <li><a href="#">UA</a></li>
+                <li><a href="#">RU</a></li>
+            </ul>
+            <button class="open_lang"><span>EN</span></button>
+        </div>
+        <a href="#" class="wishlist_btn"><span>Wishlist</span></a>
+        <nav class="header_menu">
+            <ul class="main_menu">
+                <li class="link_item"><a href="#"><span>Weddding</span> <img src="./images/banner-mob-menu.webp" width="72" height="98" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Top sellers</span> <img src="./images/banner-mob-menu.webp" width="72" height="98" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Veils</span> <img src="./images/banner-mob-menu.webp" width="72" height="98" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Where to buy</span> <img src="./images/banner-mob-menu.webp" width="72" height="98" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Become a retailer</span> <img src="./images/banner-mob-menu.webp" width="72" height="98" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Trunk show</span> <img src="./images/banner-mob-menu.webp" width="72" height="98" alt="Weddding"></a></li>
+                <li class="link_item"><a href="#"><span>Contact us</span> <img src="./images/banner-mob-menu.webp" width="72" height="98" alt="Weddding"></a></li>
+            </ul>
+            <ul class="sub-main_menu">
+                <li><a href="#">company</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">team and production</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- БАННEР З ТЕКСТОМ -->
+        <section class="text_banner">
+            <span class="main_title">Eva Lendel Story</span>
+            <div class="banner_inner">
+                <span class="banner_inner-text">Charm, mystery, sensuality, romance, all these epithets characterize the brand Eva Lendel, its dresses are the a perfect mix of contemporary details that awaken the desire to create a gentle and at the same time a bright image.</span>
+            </div>
+        </section>
+        <!-- ПРО НАС -->
+        <section class="about">
+            <div class="about_photo">
+                <picture>
+                    <source media="(max-width: 766px)" srcset="./images/banner-mob.webp">
+                    <source media="(min-width: 768px)" srcset="./images/about-photo.webp">
+                    <img src="./images/banner-mob.webp" width="373" height="619" alt="about_photo">
+                </picture>
+            </div>
+            <div class="about_grid">
+                <div class="about_item">
+                    <span class="sub_title">Vision</span>
+                    <div class="photo_item"><img src="./images/three_photo-2.webp" width="210" height="287" alt="photo item"></div>
+                    <span class="about_text">Eva Lendel is a young brand on the wedding fashion market. It was launched in 2015 with the aim of creating and bringing something new and exclusive to the wedding fashion world. The main idea of the brand is a creation of wedding dresses due to the latest tendencies of world wedding industry.</span>
+                </div>
+                <div class="about_item">
+                    <span class="sub_title">Vision</span>
+                    <div class="photo_item"><img src="./images/three_photo-2.webp" width="210" height="287" alt="photo item"></div>
+                    <span class="about_text">Eva Lendel is a young brand on the wedding fashion market. It was launched in 2015 with the aim of creating and bringing something new and exclusive to the wedding fashion world. The main idea of the brand is a creation of wedding dresses due to the latest tendencies of world wedding industry.</span>
+                </div>
+            </div>
+            <div class="about_botom">
+                <img src="./images/about-botom.webp" width="373" height="400" alt="about botom">
+                <div class="about_info">
+                    <span class="section_title">Magic</span>
+                    <span class="about_info-text">The advantage of a young brand is that it is modern, is not dependent from already established canons of wedding fashion and makes its own rules and tendencies itself.</span>
+                </div>
+            </div>
+        </section>
+        <!-- ОПИС -->
+        <section class="description">
+            <figure>
+                <div class="desc_images"><img src="./images/description.webp" width="331" height="200" alt="description"></div>
+                <figcaption><span class="sub_title">Eva Lendel, its dresses are the  perfect mix of contemporary details that awaken the desire to create a gentle and at the same time a bright image.</span></figcaption>
+            </figure>
+            <ul class="description_list">
+                <li><b>01</b><span>Production space and is climate controlled</span></li>
+                <li><b>02</b><span>More than 100 professional are working hard to sewn dream gowns</span></li>
+                <li><b>03</b><span>The unique design and perfect details create a harmonious blend which the brand reflects in its dresses.</span></li>
+            </ul>
+        </section>
+        <!-- ПЛИТКА ДВА -->
+        <section class="tiles_grid">
+            <div class="tiles_element">
+                <span class="main_title">For bride</span>
+                <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                <span class="tiles_text">She got inspired by classics, but wanted to add a hint of her own modern vision.</span>
+            </div>
+            <div class="tiles_element">
+                <span class="main_title">For retailer</span>
+                <a href="#" class="arrow_link">Explore <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+                <span class="tiles_text">More than 100 professional are working hard to sewn dream gowns.</span>
+            </div>
+        </section>
+        <!-- ІНФО -->
+        <section class="three_photo different_photos">
+            <div class="first_img">
+                <img src="./images/three_photo-1.webp" class="photo_anim" alt="three photo">
+            </div>
+            <div class="three_list">
+                <div class="sub_title">Dreams come true</div>
+                <a href="#" class="btn dark_btn">Follow us in Instagram <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+            </div>
+            <div class="second_img">
+                <img src="./images/three_photo-2.webp" class="photo_anim" alt="three photo">
+            </div>
+            <div class="third_img">
+                <img src="./images/three_photo-3.webp" class="photo_anim" alt="three photo">
+            </div>
+        </section>
+
+        <div class="shadow hidden"></div>
+
+
+        <div class="styleguide" style="display: none">
+        <!-- <div class="styleguide"> -->
+            <article>
+                <h1>LESS IS MORE 2022</h1>
+                <h2>hello world1</h1>
+                <h3>hello world1</h3>
+                <h4>hello world1</h4>
+                <h5>hello world1</h5>
+        
+                <p>LNorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda placeat soluta deleniti quod porro eaque aliquam aut dolores sapiente odio molestias mollitia omnis officia temporibus repellendus cum id similique incidunt, dolore architecto quasi dolor! Inventore vel earum dolor. Nemo laborum delectus numquam placeat maxime voluptas consequatur doloribus nostrum voluptate quod.</p>
+                <p>She got inspired by classics, but wanted to add a hint of her own modern vision. </p>
+        
+                <a href="#">Lorem ipsum dolor sit.</a>
+        
+                <ul>
+                    <li>list list list</li>
+                    <li>list list list</li>
+                    <li>list list list</li>
+                    <li>list list list</li>
+                </ul>
+           </article>
+        
+           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil temporibus dolorum velit. Earum enim vitae doloremque error, itaque placeat eligendi!</span>
+        
+           <a href="#" class="btn">All wedding colletions<svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+           <br>
+           <a href="#" class="btn active"> Нажми мене!! <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+           <br>
+           <a href="#" class="btn inactive"> Нажми мене!! <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+           <br>
+           <a href="#" class="btn dark_btn"> Нажми мене!! <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+           <br>
+           <a href="#" class="btn dark_btn active"> Нажми мене!! <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+           <br>
+           <a href="#" class="btn dark_btn inactive"> Нажми мене!! <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+           <br>
+        
+           <a href="#" class="arrow_link">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+           <br>
+           <a href="#" class="arrow_link arrow_dark">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+           <br>
+           <a href="#" class="arrow_link inactive">Details <svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></a>
+           <br>
+            <div class="input_wrap">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input_wrap">
+                <input type="text" class="error" placeholder="Email">
+                <span class="error_text">Invalid email, please enter correct data</span>
+            </div>
+            <div class="input_wrap">
+                <input type="text">
+            </div>
+            <div class="dropdown order_delivery">
+                <div class="overflow">
+                    <span>Спосіб доставки</span>
+                    <button type="button" class="drop_arrow"><svg class="icon"><use xlink:href="./images/sprite.svg#dropdown_arrow"></use></svg></button>
+                </div>
+                <ul style="display: none;">
+                    <li><a href="#">Нова Пошта</a></li>
+                    <li><a href="#">Кур’єр Нова Пошта</a></li>
+                    <li><a href="#">Кур’єр Міст Експрес</a></li>
+                    <li><a href="#">Самовивіз</a></li>
+                    <li><a href="#">Інше</a></li>
+                </ul>
+            </div>
+        
+            <div class="toggle_list">
+                <div class="toggle_wrap active">
+                    <a href="#" class="toggle_btn"><span>Style</span><svg class="icon"><use xlink:href="./images/sprite.svg#dropdown_arrow"></use></svg></a>
+                    <div class="toggle_inner">
+                        <label>
+                            <input type="checkbox">
+                            <span>Lorem, ipsum dolor.</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" checked>
+                            <span>Lorem, ipsum dolor.</span>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span>Lorem, ipsum dolor.</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="toggle_wrap">
+                    <a href="#" class="toggle_btn"><span>Style</span><svg class="icon"><use xlink:href="./images/sprite.svg#dropdown_arrow"></use></svg></a>
+                    <div class="toggle_inner">
+                        <label>
+                            <input type="radio" name="test" checked>
+                            <span>Lorem, ipsum dolor.</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="test">
+                            <span>Lorem, ipsum dolor.</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="test">
+                            <span>Lorem, ipsum dolor.</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        
+            <a href="#" class="zoom_photo">
+                <img src="./images/test_photo.webp" alt="zoom photo">
+            </a>
+    
+            <div class="element"></div>
+     
+        </div>
+    </main>
+    <footer class="site_footer">
+        <nav>
+            <ul class="footer_menu">
+                <li>
+                    <a href="#">Collections</a>
+                    <ul>
+                        <li><a href="#">golden hour</a></li>
+                        <li><a href="#">less is more '21</a></li>
+                        <li><a href="#">lisbon vibes</a></li>
+                        <li><a href="#">pure essence</a></li>
+                        <li><a href="#">bohemian flower</a></li>
+                        <li><a href="#">less is more</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                    <ul>
+                        <li><a href="#">golden hour</a></li>
+                        <li><a href="#">less is more '21</a></li>
+                        <li><a href="#">lisbon vibes</a></li>
+                        <li><a href="#">pure essence</a></li>
+                        <li><a href="#">bohemian flower</a></li>
+                        <li><a href="#">less is more</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Legal</a>
+                    <ul>
+                        <li><a href="#">golden hour</a></li>
+                        <li><a href="#">less is more '21</a></li>
+                        <li><a href="#">lisbon vibes</a></li>
+                        <li><a href="#">pure essence</a></li>
+                        <li><a href="#">bohemian flower</a></li>
+                        <li><a href="#">less is more</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Follow us</a>
+                    <ul>
+                        <li><a href="#">golden hour</a></li>
+                        <li><a href="#">less is more '21</a></li>
+                        <li><a href="#">lisbon vibes</a></li>
+                        <li><a href="#">pure essence</a></li>
+                        <li><a href="#">bohemian flower</a></li>
+                        <li><a href="#">less is more</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer_subscribe">
+            <span class="subscribe_title">Subscribe for our exclusive newsletter</span>
+            <form>
+                <input type="email" placeholder="Email">
+                <button type="submit" class="btn">Submit<svg class="icon"><use xlink:href="./images/sprite.svg#btn_arrow"></use></svg></button>
+            </form>
+        </div>
+        <div class="copyright">
+            <span class="copyright_evalendel">Eva Lendel Copyright © 2021</span>
+            <span class="copyright_sufix">Development by <a href="https://websufix.com/website/">Sufix</a> web agency</span>
+        </div>
+    </footer>
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/plugins/slick.min.js"></script>
+    <script src="./js/plugins/gsap.min.js"></script>
+    <script src="./js/plugins/ScrollTrigger.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
