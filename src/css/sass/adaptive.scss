@@ -2,7 +2,6 @@
     h3,
     .section_title {
         font-size: 24px;
-        letter-spacing: 1px;
     }
 
     h4,
@@ -51,13 +50,11 @@
     h1,
     .main_title {
         font-size: 60px;
-        letter-spacing: 1.4px;
     }
 
     h2,
     .sub_title {
         font-size: 40px;
-        letter-spacing: 1.4px;
     }
 
     .site_header {
@@ -96,6 +93,10 @@
                 opacity: 1;
             }
         }
+    }
+
+    .drop_arrow {
+        width: 70px;
     }
 
     .header_search {
@@ -163,6 +164,10 @@
 
     .footer_subscribe {
         padding: 48px 30px;
+    }
+
+    .subscribe_title {
+        margin-bottom: 30px;
     }
 
     .breadcrumbs {
@@ -455,6 +460,10 @@
         padding: 55px 30px;
     }
 
+    .logations_select .section_title {
+        margin-bottom: 25px;
+    }
+
     .country_name {
         padding: 45px 30px;
     }
@@ -484,6 +493,10 @@
 
     .big_form {
         padding: 80px 30px;
+
+        .main_title {
+            margin-bottom: 60px;
+        }
     }
 
     .article_details {
@@ -639,7 +652,7 @@
     }
 
     .privacy_header {
-        padding: 30px;
+        padding: 35px 30px;
     }
 
     .open_info.btn {
@@ -1061,7 +1074,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
-        grid-gap: 10px;
+        grid-gap: 15px;
         padding: 40px 30px;
 
         .section_title {
@@ -1336,5 +1349,9 @@
 
     .details_control {
         border-right: 1px solid var(--border-color);
+    }
+
+    .privacy_header {
+        padding: 50px 30px;
     }
 }

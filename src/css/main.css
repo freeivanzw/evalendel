@@ -661,7 +661,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
+  width: 50px;
   height: 40px;
   border-radius: var(--border-r-size);
   border: 1px solid var(--border-color);
@@ -1220,7 +1220,7 @@ textarea {
 
 .footer_subscribe {
   margin-top: auto;
-  padding: 20px 30px;
+  padding: 20px;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
@@ -2249,11 +2249,6 @@ textarea {
 /*
 ----- ЛОКАЦІЇ МАГАЗИНІВ -----
 */
-.locations {
-  border-right: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
-}
-
 .logations_select {
   padding: 30px 20px;
   background-color: var(--neutral-color);
@@ -2460,7 +2455,7 @@ textarea {
 
 .cantacts_item {
   border-bottom: 1px solid var(--border-color);
-  padding: 30px 20px;
+  padding: 30px 20px 20px 20px;
 }
 .cantacts_item .sub_title {
   margin-bottom: 10px;
@@ -2469,7 +2464,7 @@ textarea {
 .contacts_header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 
 .contacts_text {
@@ -2590,8 +2585,6 @@ textarea {
 .production {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
 }
 
 .banner_production {
@@ -2703,11 +2696,6 @@ textarea {
 /*
 ----- ПОЛІТИКА КОНФІДЕНЦІЙНОСТ -----
 */
-.privacy_policy {
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-}
-
 .privacy_list {
   display: flex;
   flex-direction: column;
@@ -2963,7 +2951,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 24px 30px;
+  padding: 16px 20px;
   border-bottom: 1px solid var(--border-color);
 }
 .sizes_wrap .item_title,
