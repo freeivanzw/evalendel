@@ -2372,6 +2372,8 @@ textarea {
 .article_details picture img {
   display: block;
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 .article_details picture + * {
   margin-top: 40px;
